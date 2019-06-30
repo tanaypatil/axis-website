@@ -1,0 +1,725 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 DEVISE</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+	input{
+        border-radius: 10px; 
+    }
+    .nav-pills li{
+		padding:0px 2px;
+	}
+    
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 80k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">DEVISE</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">ABOUT</a></li>
+            <li><a data-toggle="pill" href="#architech">ARCHITECH</a></li>
+            <li><a data-toggle="pill" href="#designo">DESIGNO</a></li>
+            <li><a data-toggle="pill" href="#archi">ARCHI-QUIZ</a></li>
+            <li><a data-toggle="pill" href="#wks">WORKSHOP</a></li>
+            <li><a data-toggle="pill" href="#photoscope">PHOTOSCOPE</a></li>
+            <li><a data-toggle="pill" href="#informals">INFORMALS</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACTS</a></li>
+            </ul>
+        <br>
+        
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                
+                <p>
+                	Think your ideas have the potential to change the world? Always finding your own solutions more efficient                     than others? You may just be cut out for Devise, AXIS's design competition. Test your mettle against                     creative minds just like yours in order to come up with the most inspired solutions to the design                      challenges we give you. A chance to learn and check where you stand among your peers. Demand innovative and                      ground-breaking solutions. Drive the participants to delve deep into their creative core and emerge with                     unexpected practical solutions. Devise something new.<br><br>
+                    <span class="larger"><b>THEME-FUTURISM</b></span><br>
+                    The most important Italian avant-garde movement of the 20th century. Futurism celebrates Advanced Technology                    and Urban Modernity. Committed to the new, its members wished to destroy older forms of culture and to                    demonstrate the beauty of Modern Life- The beauty of the Machine, speed, change as well as abstract and                    simplicity.
+                </p>
+            </div>
+
+
+
+            <div id="wks" class="tab-pane fade">
+
+                <div class="menuscroll"> <p>
+
+                    <div class="col-md-6 prblm_ul">
+                    A workshop to introduce Bamboo as a building material to the students.<br>
+                    Idea: A 3-day workshop organized at VNIT, Nagpur.<br>
+                    When: 10, 11, 12 September, 2016<br>
+                    For whom: Students of Architecture<br>
+                    Venue: VNIT, Nagpur<br>
+                    Timings: 8.00 am to 6.00 pm every day</div>
+                    <div class="col-md-offset-1 col-md-4">
+                        <button type="button" class="btn btn-info btn-sm tbutton" data-toggle="modal" data-target="#myModal">
+                        <img src="{% static 'main/images/events/Devise/bamboowks.jpg' %}" class="img-thumbnail img-responsive" style="height: 260px; width: 184px">
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade change1" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body col-md-offset-3">
+                                    <img src="{% static 'main/images/events/Devise/bamboowks.jpg' %}" class="img-responsive">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <!--<img src="{% static 'main/images/events/Devise/bamboowks.jpg' %}" class="img-thumbnail img-responsive" style="height: 260px; width: 184px">-->
+                    </div>
+                    <br><br><br><div class="prblm_ul">
+                    <span class="larger">Structure:</span><br>
+                    The workshop is primarily hands-on experience for the students and young professionals.<br>
+                    This will expose the participants to the nature of bamboo, get familiar with the material, and make<br>
+                    them experience its behavior when used in different conditions in a building-structure.<br>
+                    A small group of say about 30 participants(2nd and 3rd year) and 20 participants (first year) will<br>
+                    work with the bamboo to understand the material and its applications.<br>
+                    This will be a mix of some class-room sharing of ideas along with exploration and experimentation <br>
+                    with bamboo that will happen, hands on. Typically a day will have a 1 class-room session and 2 work-sessions.<br><br>
+                    <span class="large"> Day 1</span><br>
+                    <span class="bold">Session 1:</span>
+                    ‘Breaking the Ice’; Introduction to the workshop, an introduction to the group and getting started.<br>
+                    <span class="bold">Session 2:</span>
+                    Getting to know Bamboo – exploring some basic working-methods, tools and techniques of working the<br>
+                    material. This will include cutting, splitting, splicing, drilling etc.<br>
+                    The first day, all years, i.e., first, second and third year will work together. <br>
+                    At the end of session 2, a one hour session would be held to design and explore with bamboo.<br>
+                    These designed units would be made by the first year during the next two days in a parallel session.<br><br>
+                    <span class="large">Day 2</span><br>
+                    From day 2, the second and third year would work on building a 1:1 scale model of the built form.<br>
+                    <span class="bold">Session 1:</span>
+                    Understanding of the entire structure, layouting of the entire structure on site with the help of<br>
+                    few volunteers. The division of the group in 5 parts. Each will make 5 components of the structure.<br>
+                    <span class="bold">Session 2:</span>
+                    Preparation of the structural components of the built form in 5 groups( 6 people each).<br><br>
+
+                    <span class="large">Day 3:</span><br>
+                    <span class="bold">Session 1:</span>
+                    The components put together by the group along with necessary added components, to make a kit that<br>
+                    will help group put a structure together. It will be an exercise in assembly of structural members<br>
+                    to make a complete built-form. In doing so the group will understand and be able to relate with<br>
+                    issues of junctions, details etc.<br>
+                    <span class="bold">Session 2:</span>
+                    The assembly of the structure to continue.<br>
+                    <span class="bold">Concluding session:</span>
+                    Share experiences from participants. Feed-back from the participants etc.
+                    </div>
+                </p></div>
+            </div>
+
+
+            
+            <div id="architech" class="tab-pane fade">   
+               <div class="menuscroll"> <p>
+                	Architech is here. Time to tickle your brain with yet another challenging brief which will test your
+                    analytical power, observation skill and of course the ability to bring about refreshing designing
+                    interventions in order to create startling architectural specimens and also cater to the current issues
+                    faced by the society as a result of failure of architecture. <br>
+                    <span class="larger">A chance to correct this. A chance to test your abilities. One More Time!</span>
+                   <br><br><span class="larger">BRIEF OF THE EVENTS</span><br><br>
+                    <div class="col-md-4 prblm_ul" style="box-shadow: 0px 0px 2px 4px #FFFFFF; padding: 5px; margin-left: 8px;">
+                    <a target="_blank" href="https://drive.google.com/file/d/0B9H3Um8hNuyTRm5PckpkLXBreFE/view?usp=sharing"> FOR 1st and 2nd Year Students</a></div><br>
+                    <br><div class="col-md-4 prblm_ul" style="box-shadow: 0px 0px 2px 4px #FFFFFF; padding: 5px;  margin-left: 8px; margin-bottom: 8px">
+                        <a target="_blank" href="https://drive.google.com/file/d/0B9H3Um8hNuyTQXFEeG9tXzhma3c/view?usp=sharing"> FOR 3rd and 4th Year Students</a></div>
+                    
+
+                    
+
+
+
+
+
+
+
+
+
+                     <!-- <br><br>
+                   <br><span class="larger" style="text-decoration: underline">REGISTER</span><br><br>
+
+
+
+
+
+
+
+
+                    <div class="form">
+             <form role="form" class="form-horizontal" method="post" action="{% url 'architechreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+
+                        <br>
+
+                    	    <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Team Head</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                      <div class="row">
+
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>
+       </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                     
+                </p></div>
+            </div>
+            
+            <div id="designo" class="tab-pane fade">   
+               <div class="menuscroll"> <p>
+                	
+					Looking for something to widen your perspective about Architecture and its ways..?<br>
+                    <b>DESIGNO</b> is the best deal for you! The mind boggling design brief gets you all scratching your head                    and tugging your hair! Designo gives you a chance to refresh your thought processes with challenges and                    demands of our own habits and our spirit, trampling down all that is grotesque and antithetical. The theme                    revolving around Futurism, its design should not be subjected to any historical law of continuity. It must                    be new, just as our state of mind is new.<br>
+                    <span class="larger">Architecture now makes a break with tradition!</span>
+                    <br><br><span class="larger">BRIEF OF THE EVENTS</span><br><br>
+                    <div class="col-md-4 prblm_ul" style="box-shadow: 0px 0px 2px 4px #FFFFFF; padding: 5px; margin-left: 8px;">
+                    <a target="_blank" href="https://drive.google.com/file/d/0B9H3Um8hNuyTNzV5Vnoybl9EaUE/view?usp=sharing"> FOR 1st and 2nd Year Students</a></div><br>
+                    <br><div class="col-md-4 prblm_ul" style="box-shadow: 0px 0px 2px 4px #FFFFFF; padding: 5px;  margin-left: 8px; margin-bottom: 8px">
+                        <a target="_blank" href="https://drive.google.com/open?id=0B9H3Um8hNuyTdHdjck16MGhWNWc"> FOR 3rd and 4th Year Students</a></div>
+                      
+
+
+
+
+                      
+
+
+
+                    <!--<br><br><br>
+
+
+
+                   <span class="larger" style="text-decoration: underline">REGISTER</span><br><br>
+
+
+
+
+
+
+
+
+                    <div class="form">
+             <form role="form" class="form-horizontal" method="post" action="{% url 'desigreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+
+                        <br>
+
+                    	    <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Team Head</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                      <div class="row">
+
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>
+       </div>-->
+
+                   
+
+
+
+
+                </p></div>
+            </div>
+            
+            <div id="archi" class="tab-pane fade">
+                
+                <p>
+                	Get your brain cells charged up as the most exciting and exuberant quiz of the year begins! Prepare yourself                    to witness an intense combat of the quick witted and sharp sighted. Here's presenting the Archi Quiz'16                     which is sure to keep you on the edge of your seat and guessing till the very end.....
+                </p>
+            </div>
+            
+            <div id="photoscope" class="tab-pane fade">
+                
+               <div class="menuscroll"> <p>
+                	It’s time to dust off that camera and start shooting because the best picture you will ever take might be                    the one you click tomorrow .Devise 2016 presents PHOTOSCOPE, it’s your opportunity to showcase your                    photography skills .There are no rules for good photographs, there are only good photographs so if you have                    any picture no matter how unconventional but suitable for the theme bring it to us and get a chance to be                    declared the best
+                  <br><br>Refer the
+                    <a target="_blank" href="https://drive.google.com/file/d/0B9H3Um8hNuyTS1MwUGN6ZG05SG1UeEF5TElQMmJfbmJyS1Zz/view?usp=drivesdk"> document </a>
+                    for more details.<br>
+
+
+
+
+
+
+
+
+
+
+                 <!--<span class="larger" style="text-decoration: underline">REGISTER</span><br><br>
+
+
+
+
+
+
+
+
+                    <div class="form">
+             <form role="form" class="form-horizontal" method="post" action="{% url 'photoscreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+
+
+                    	    <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Member1</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                      <div class="row">
+
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>
+       </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </p></div>
+            </div>
+            
+            <div id="informals" class="tab-pane fade">
+                
+                <p>
+                	EXCITING AND WONDERFUL INFORMAL ON SPOT EVENTS WHICH WEAVES STUDENT’S TALENT AND PRODUCE SOMETHING CREATIVE                    AND INNOVATIVE.
+                </p>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                
+                <p style="text-align:center">
+                	
+                    <br>
+                    
+                    <span class="col-lg-4 col-md-offset-1 col-xs-4 col-xs-offset-1">
+                    <span class="contact_name">JAMILA KAPDAWALA</span>
+                    <br>+91-8149781429
+                    <!--<span class="contact_mail">adishivam21@gmail.com</span>--></span>
+                    
+                    <span class="col-lg-3 col-md-offset-2 col-xs-4 col-xs-offset-3">
+                    <span class="contact_name">PANKAJ PATHARE</span>
+                    <br>+91-9975045875
+                    <!--<span class="contact_mail">adishivam21@gmail.com</span>--></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-4 col-md-offset-1 col-xs-4 col-xs-offset-1">
+                    <span class="contact_name">SAUDAMINI DESHPANDE</span>
+                    <br>+91-7387235906
+                    <!--<span class="contact_mail">adishivam21@gmail.com</span>--></span>
+                    
+                    <span class="col-lg-3 col-md-offset-2 col-xs-4 col-xs-offset-4">
+                    <span class="contact_name">SHUBHAM HIRKNEY</span>
+                    <br>+91-7038979557
+                    <!--<span class="contact_mail">adishivam21@gmail.com</span>--></span>
+                    <br><br><br>
+                    <span class="col-md-3 col-md-offset-4 larger"><b>Mail us at:<a href="mailto:devise.axis.vnit@gmail.com" class="contact_mail" style="font-size: 24px;"> devise.axis.vnit@gmail.com</a></b></span>
+                </p>
+            </div>
+            
+            <div id="register" class="tab-pane fade menuscroll">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post">
+                	<div class="form-group-sm ">
+                    	
+                        <div class="row">
+                           <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                          <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                         <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                         <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+  
+                        <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>
+            </div>
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>
+

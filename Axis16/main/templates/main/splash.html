@@ -1,0 +1,71 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS 2016</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+
+<style>
+	#bkg {
+		background-image: url(images/SPLASH.jpg);
+		background-size:cover;
+	}
+	@media screen and (max-width:1000px) {
+		#bkg {
+		background-image: url(images/splashmobi.jpg);
+		background-size:cover;
+		background-position:center;
+	}
+	}
+	.animate-in{
+		animation: fadein .5s ease-in;
+	}
+	@keyframes fadein{
+		0%{
+			opacity:0;
+		}
+		100%{
+			opacity:1;
+		}
+	}
+	.animate-out{
+		transition: opacity 3s;
+		opacity:0;	
+	}
+	</style>
+
+</head>
+
+<body onLoad="transfer()" onbeforeunload="return fadeout()" >
+<div id="big">
+<div id="bkg" class="animate-in"></div>
+</div>
+
+<script src="{% static 'main/js/jquery-2.2.2.js' %}"></script>
+<script src="{% static 'main/js/bootstrap-3.3.6.js' %}"></script>
+<script>
+	var h =$(window).outerHeight();
+	var w = $(window).outerWidth();
+	$("#bkg").css({
+		'height':h,
+		'width':w
+		});
+		
+		$(window).load(function() {
+			
+			$("body").delay(2500).fadeOut(500);
+			});
+		function transfer(){
+			window.setTimeout("Redirect()",3000);
+		}
+		
+		function Redirect(){
+			window.location="index.html";
+		}
+		
+</script>
+</body>
+</html>
+

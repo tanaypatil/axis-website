@@ -1,0 +1,477 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 AQUAHUNT</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+
+<style>
+
+	.nav-pills li{
+		padding:0px 2px;
+	}
+	input{
+        border-radius: 10px; 
+    }
+    
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 20k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">AQUAHUNT</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills" >
+            <li class="active"><a data-toggle="pill" href="#event" >EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#problem" >PROBLEM STATEMENT</a></li>
+            <li><a data-toggle="pill" href="#levels" >POINTS CRITERIA</a></li>
+            <li><a data-toggle="pill" href="#rules" >RULES</a></li>
+            <li><a data-toggle="pill" href="#arena" >ARENA AND TUTORIALS</a></li>
+            <li><a data-toggle="pill" href="#contact_us" >CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register" >REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                
+                    <p style="text-align:justify">
+                        Its the Marvel's cinematic universe. The theme is based around Thor, a Morse God and one of the                        several avengers.The world of Asgard is under attack and is getting destroyed by Loki's army.                        Thor is helpless at this moment as he is at Earth without his hammer.In this universe, the path                        between Earth and Asgard is a sea with gushing waters. Loki's army produces uncanny changes and                        turbulence in the water around the world of Asgard too.Your job is to design a ship to rescue                        the people from Asgard and carry them to a safer place i.e. Earth through the challenging                        sea-path. Another feat that your ship has to accomplish is to bring back Thor's hammer which he                        left at Asgard.<br><br>
+                        Will you be able to rescue the citizens of Asgard?<br><br>
+                        Will you be able to unite Thor to his Hammer before Loki destroys everything?
+                    </p>
+                
+            </div>
+            
+            <div id="problem" class="tab-pane fade">
+                <div class="menuscroll"><p >
+                  <ol>
+                    <li class="prblm_ul">
+                       The basic task of the bot in the ‘First Mission’ of the two will be to navigate safely through
+                       the arena and<br> place the objects on strategic locations and points awarded will be
+                       proportional to the difficulty and<br> reach of the checkpoints and the blocks placed.</li>
+                       <br><br>
+
+                    <li class="prblm_ul">
+                       The objects comprises of cubical wooden blocks and a T-shaped wooden block. The cubical block                       correspond to<br> the Asgard people stuck at the time of destruction of their world. The
+                       T-shaped block correspond<br> to Thor’s Hammer. Points awarded will differ for both objects.</li>
+                       <br><br>
+
+                    <li class="prblm_ul">An idea about the strategic places can be found in the Arena Specifications.</li>
+                    <br><br>
+
+                    <li class="prblm_ul">The task focuses more on the bot’s grabbing efficiency and the navigator’s skill.</li>
+                    <br><br>
+
+                    <li class="prblm_ul">
+                      The Thor’s Hammer (T-shaped block) can only be grabbed after rescuing minimum five
+                      Asgard citizens (i.e. cubical blocks).</li>
+                      <br><br>
+
+                    <li class="prblm_ul">
+                      If the objects (people) are dropped midway in water, they can be rescued from the raging
+                      sea path<br> in a specified time period (Refer Rules) else they will be
+                      considered dead and cannot be<br> rescued and points will be deducted for the same.</li>
+                      <br><br>
+
+                    <li class=" prblm_ul">
+                      More than one object can be carried simultaneously by the bot to utilize the time properly.
+                    </li><br><br>
+
+                    <li class="prblm_ul">
+                      Sea’s turbulence (minor) might be simulated which correspond to the Loki's army
+                      around the Asgard<br> and hence bot must be well designed to avoid toppling as hand touches
+                      will cause deduction in points.</li>
+                      <br><br>
+
+                    <li class="prblm_ul">
+                      Details and Tasks for the ‘Second Mission’ will be declared during the event although no
+                      modifications<br> in the bot will be needed for completing them.</li>
+                      <br><br>
+                      </ol>
+                </p></div>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                    <span class="col-lg-3 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">AKSHAYAN MP</span>
+                    <br>+91-8793269927
+                    <br><a href="mailto:akshayanmp@gmail.com" class="contact_mail">akshayanmp@gmail.com</a></span>
+                    
+                    <span class="col-lg-3 col-md-offset-3 col-xs-4 col-xs-offset-4">
+                    <span class="contact_name">AMAN JANGDE</span>
+                    <br>+91-9404115260
+                    <br><a href="mailto:amanjangde02@gmail.com" class="contact_mail">amanjangde02@gmail.com</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-3 col-md-offset-4 col-xs-4 col-xs-offset-4">
+                    <span class="contact_name">ANSHUL YADAV</span>
+                    <br>+91-8408926596
+                    <br><a href="mailto:anshulyadav2302@gmail.com" class="contact_mail">anshulyadav2302@gmail.com</a></span>
+                </p>
+            </div>
+            
+            <div id="register" class="tab-pane fade menuscroll">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'aquahuntreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+                    	  <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="foname" id="foname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focollege" id="focollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fomail" id="fomail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focon" id="focon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focity" id="focity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 5</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="finame" id="finame" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficollege" id="ficollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fimail" id="fimail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficon" id="ficon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficity" id="ficity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+
+                      
+                      <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>
+
+            <!--<p style="font-size:20px; text-align:center;">STARTING SOON
+                </p>-->
+        
+        </div>
+            
+            <div id="levels" class="tab-pane fade">
+                <div class="menuscroll"> <p>
+                    <ul>
+                    <li class="prblm_ul">The points system described below are for the ‘First Round’ only.</li>
+                    <li class="prblm_ul">
+                        The points for the Second Round will be disclosed at the time of ‘Second Round’ itself, although no<br>
+                    modifications in the design of bots is required for the ‘Second Round’.
+                    </li>
+                    <li class="prblm_ul">Each team will be given 10 minutes to complete the tasks/event. <br>
+                        For testing of their bots, 2 extra minutes will be given before the start of tasks/event.
+                    </li>
+                    <li class="prblm_ul">The points are decided according to placement of the blocks on the safety islands ranging from 10 to 30.</li>
+                    <li class="prblm_ul">Every time, the bot passes the turbulence region, extra 5 points will be awarded.</li>
+                    <li class="prblm_ul">If the team drops any block into the water, 5 points will be deducted from their total score.</li>
+                    <li class="prblm_ul">There is a limitation in the number of hand-touches allowed during the tasks/event.<br>
+                        The first hand touch is allowed with no change in the total score. <br>
+                        However, each hand touch after the first, will lead to deduction of 10 points from the total score.
+                    </li>
+                    <li class="prblm_ul">Grabbing and placing the T-shaped block ( Thor’s Hammer) successfully on any of
+                        the safety islands will be awarded with extra 100 points.</li>
+                    <li class="prblm_ul">Innovation in the design of bots will be awarded with 50 points.</li>
+                    <li class="prblm_ul">The ‘Second Round’ will be disclosed at the time of the event.</li>
+                    <li class="prblm_ul">Event Managers’ decision at the time of event will be Final and Binding.</li>
+                </ul>
+
+                </p></div>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <p>
+                    <ul>
+                       <li class="prblm_ul"> The robot should fit in a box of 30 x 30 x 30 cm in its most compact form.</li>
+                       <li class="prblm_ul">A Maximum of 5 people can be there in a group.</li>
+                       <li class="prblm_ul">The robot has to be necessarily controlled by some wired/wireless remote controlled
+                           mechanism at all stages of the event.</li>
+                       <li class="prblm_ul">The controlling wires should not be held taut at any point of the event.</li>
+                       <li class="prblm_ul">Wireless bot will be awarded extra points in preliminary round i.e. the ‘First Mission’.</li>
+                       <li class="prblm_ul">Use of Lego kits or readymade mechanisms is strictly prohibited. Violation of this
+                           clause will lead to disqualification of the robot. However, readymade gear and shafts may be used.</li>
+                       <li class="prblm_ul">The potential difference between any two points on the bot should not exceed 12V.</li>
+                       <li class="prblm_ul">A 12V power supply will be provided by us.</li>
+                       <li class="prblm_ul">Damage to the arena by the bot may result in disqualification.</li>
+                       <li class="prblm_ul">Event managers’ decision will be final and binding.</li>
+                </p>
+            </div>
+            
+            <div id="arena" class="tab-pane fade">
+               <div class="menuscroll"> <p>
+                   <div class="col-md-6 col-md-offset-2">
+                        <button type="button" class="btn btn-info btn-sm tbutton" data-toggle="modal" data-target="#myModal">
+                        <img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua2.jpg' %}">
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade change1" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                    <img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua2.jpg' %}">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <!--<img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua2.jpg' %}">-->
+                   </div>
+                   <div class="col-md-4">
+                       <br><br>
+                       <span class="larger prblm_ul" style="padding: 6px; box-shadow: 0px 0px 2px 4px #FFFFFF;">
+                       <a target="_blank" href="https://youtu.be/kx1ynI56fgc">BOT MAKING VIDEO.</a></span>
+
+                   </div>
+                <br><br><br><br><br><br><br><br><br><br><br>
+
+
+                   <div class=" col-md-offset-1 col-md-5">
+                        <button type="button" class="btn btn-info btn-sm tbutton" data-toggle="modal" data-target="#myModalf">
+                        <img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua1.jpg' %}">
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade change1" id="myModalf" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                    <img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua1.jpg' %}">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <!--<img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua1.jpg' %}">-->
+                   </div>
+
+
+
+                   <div class=" col-md-offset-1 col-md-5">
+                       <button type="button" class="btn btn-info btn-sm tbutton" data-toggle="modal" data-target="#myModals">
+                        <img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua3.jpg' %}">
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade change1" id="myModals" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                    <img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua3.jpg' %}">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                        <!--<img class="img-responsive img-thumbnail" src="{% static 'main/images/events/aquahunt/aqua3.jpg' %}">-->
+                   </div>
+                    <br><br>
+
+                   </p></div>
+            </div>
+            
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

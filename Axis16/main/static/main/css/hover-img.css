@@ -1,0 +1,258 @@
+.ch-grid {
+	margin: 5px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 175px;
+	height: 175px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 { 
+	background-image: url(../images/team/amit.jpg);
+	background-size:cover;
+}
+
+.ch-img-2 { 
+	background-image: url(../images/team/anushka.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.ch-img-3 { 
+	background-image: url(../images/team/harshal.jpg);
+	background-size:contain;
+}
+
+.ch-img-4 { 
+	background-image: url(../images/team/chammu.jpg);
+	background-size:cover;
+}
+
+.ch-img-5 { 
+	background-image: url(../images/team/JP.jpg);
+	background-size:cover;
+	background-position: left;
+}
+
+.ch-img-6 { 
+	background-image: url(../images/team/vivek.jpg);
+	background-size:contain;
+}
+
+.ch-img-7 { 
+	background-image: url(../images/team/sumedh.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.ch-img-8 {
+	background-image: url(../images/team/jr.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.ch-img-9 {
+	background-image: url(../images/team/meghana.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.ch-img-10 {
+	background-image: url(../images/team/mihika.JPG);
+	background-size:cover;
+	background-position: center;
+}
+
+.ch-img-11 {
+	background-image: url(../images/team/praneel.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.ch-img-12 {
+	background-image: url(../images/team/shubham.jpg);
+	background-size:cover;
+	background-position: top;
+}
+
+.ch-img-13 {
+	background-image: url(../images/team/tanay.jpg);
+	background-size:cover;
+	background-position: left;
+}
+
+.ch-img-14 {
+	background-image: url(../images/team/drashan.jpg);
+	background-size: cover;
+	background-position: left;
+}
+
+.ch-img-15 {
+	background-image: url(../images/team/gabhane.jpg);
+	background-size: contain;
+	background-position: top;
+}
+
+.ch-img-16 {
+	background-image: url(../images/team/katpatalsir.jpg);
+	background-size: contain;
+}
+
+.ch-img-17 {
+	background-image: url(../images/team/vijaykumarsir.jpg);
+	background-size: contain;
+}
+
+.ch-img-18 {
+	background-image: url(../images/team/atharva.jpg);
+	background-size: contain;
+}
+
+.ch-img-19 {
+	background-image: url(../images/team/rahul.jpg);
+	background-size: contain;
+}
+
+.ch-img-20 {
+	background-image: url(../images/team/diwakarsir.jpg);
+	background-size: contain;
+}
+
+.ch-img-21 {
+	background-image: url(../images/team/kotambkarsir.jpg);
+	background-size: contain;
+}
+
+.ch-img-22 {
+	background-image: url(../images/team/dh_lataye.jpg);
+	background-size: cover;
+}
+
+.ch-img-23 {
+	background-image: url(../images/team/hemachandra.jpg);
+	background-size: cover;
+}
+
+.ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+	transform: scale(0);
+	backface-visibility: hidden;
+}
+
+.ch-info h3 {
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin: 0 30px;
+	padding: 108px 0 0 0;
+	height: 144px;
+	font-family: "Arial Rounded MT Bold", Calibri, "Comic Sans MS";
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 1px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 0px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid hsla(0,21%,10%,1.00);
+}
+
+.ch-info p a {
+	display: block;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 2px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+	box-shadow: 
+		inset 0 0 0 110px rgba(200,95,66, 0.4),
+		inset 0 0 0 16px rgba(255,255,255,0.8),
+		0 1px 2px rgba(0,0,0,0.1);
+}
+
+.ch-item:hover .ch-info {
+	opacity: 1;
+	transform: scale(1);	
+}
+
+.h_green:hover{
+		box-shadow: 
+		inset 0 0 0 110px hsla(108,100%,50%,0.56),
+		inset 0 0 0 16px transparent,
+		0 1px 2px rgba(0,0,0,0.1) !important;
+}
+
+.h_yellow:hover{
+		box-shadow: 
+		inset 0 0 0 110px hsla(58,100%,48%,0.62),
+		inset 0 0 0 16px transparent,
+		0 1px 2px rgba(0,0,0,0.1) !important;
+}
+
+.h_blue:hover{
+		box-shadow: 
+		inset 0 0 0 110px hsla(209,100%,50%,0.62),
+		inset 0 0 0 16px transparent,
+		0 1px 2px rgba(0,0,0,0.1) !important;
+}
+
+.h_red:hover{
+		box-shadow: 
+		inset 0 0 0 110px hsla(359,100%,50%,0.46),
+		inset 0 0 0 16px transparent,
+		0 1px 2px rgba(0,0,0,0.1) !important;
+}
+
+.h_white:hover{
+		box-shadow: 
+		inset 0 0 0 110px hsla(0,0%,100%,0.36),
+		inset 0 0 0 16px transparent,
+		0 1px 2px rgba(0,0,0,0.1) !important;
+}

@@ -1,0 +1,351 @@
+/* CSS Document */
+
+body {
+	background-position: 10% 50%;
+	background-color:#171717;
+	background-size: cover;
+}
+
+#colours{
+	background-image: url("../images/socini/coloursbkg.jpg");
+}
+
+#env{
+	background-image: url("../images/socini/envday1.jpg");
+}
+
+#smoke{
+	background-image: url("../images/socini/nosmokingbkg.jpg");
+}
+
+#mad{
+	background-image: url("../images/socini/madbkg.jpg");
+}
+
+#blood{
+	background-image: url("../images/socini/blood-donation.jpg");
+}
+
+.axisimg{
+		height:95px;
+		width:321px;
+		margin-right:25px;
+	}
+
+.main{
+	font-size: 18px;
+    height: 380px;
+	box-shadow: 0px 0px 4px 2px #D8FE01; 
+	padding: 40px;
+	padding-top:20px;
+	background-color:hsla(0,0%,0%,0.54);
+	margin-bottom:40px;
+}
+
+p {
+	font-family:"Caviar";
+	font-size:17px;
+	text-align:justify;
+	color:#FFFFFF;
+}
+
+.caroudiv{
+	border-radius:13px !important;
+	background-color:transparent;
+}
+
+.carouselcus{
+	background-color: hsla(69,99%,50%,0.16);
+	border-radius:13px !important;
+}
+
+
+.chevron-right{
+	font-size:24px !important;
+	color:hsla(0,0%,100%,0.67);
+	padding-left:15px;
+}
+.chevron-right:hover{
+	color:hsla(0,0%,100%,0.85);
+}
+
+.chevron-left{
+	font-size:24px !important;
+	color:hsla(0,0%,100%,0.37);
+}
+.chevron-left:hover{
+	color:hsla(0,0%,100%,0.75);
+}
+
+
+.caroucon{
+	margin-top:10px;
+}
+
+.top{
+	margin-top:20px;
+	margin-bottom:45px;
+}
+
+.heding{
+	font-family:"Bebas";
+	font-size:66px;
+	color:#FFFFFF;
+	text-shadow:1px 1px 4px #D8FE01;
+	padding-left:60px;
+	letter-spacing:0.1em;
+}
+
+#home{
+	position:absolute;
+	top:25px;
+	left:25px;
+	font-size:30px;
+	color:hsla(0,0%,100%,0.63);
+	z-index:1;
+}
+
+#home:hover{
+	color:hsla(0,0%,100%,0.88);
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+}
+
+
+/*footer*/
+	
+	
+	.footer{
+		margin-top:30px;
+        background-color:hsla(0,0%,0%,0.42);
+        padding-top:16px;
+        padding-bottom:16px;
+        height: fixed;
+    }
+    
+    .social-icon{ 
+        font-size:18px !important;
+        padding-left:15px;
+        font-style:normal;
+		color: #D8FE01;
+    }
+    .social-icon:hover{
+        background:none !important;
+        border:none !important;
+        text-decoration:none !important;
+    }
+    .social-icon:focus{ 
+        padding-left:15px;
+        font-style:normal;
+    }
+    
+    .fb{
+        background:none !important;
+		color:#D8FE01;
+    }
+    .fb:hover{
+        color:#3B5999;
+    }
+    .fb:focus{
+        color:#3B5999;
+    }
+    .gp{
+        background:none !important;
+		color:#D8FE01;
+    }
+    .gp:hover{
+        color:#dc4b38;
+    }
+    .gp:focus{
+        color:#dc4b38;
+    }
+    
+    .tw{
+        background:none !important;
+		color:#D8FE01;
+    }
+    .tw:hover{
+        color:#00aced;
+    }
+    .tw:focus{
+        color:#00aced;
+    }
+    
+    .in{
+        background:none !important;
+    }
+    .in:hover{
+        color:#0077b5;
+    }
+    .in:focus{
+        color:#0077b5;
+    }
+
+    .ins{
+        background:none !important;
+    }
+    .ins:hover{
+        color:#de3368;
+    }
+    .ins:focus{
+        color:#de3368;
+    }
+    
+    .yt{
+        background:none !important;
+		color:#D8FE01;
+    }
+    .yt:hover{
+        color:#ce2d2c;
+    }
+    .yt:focus{
+        color:#ce2d2c;
+    } 
+	
+	
+	
+	/*time*/
+	
+	
+	 @font-face {
+           font-family:"time";
+           src: url(../fonts/digital-7.ttf);
+        }
+		
+        .clockdiv {
+            font-family:"time";
+            color:#D8FE01;
+            font-size:18px;
+        }		
+
+        .time{ 
+            width: 30px;
+            padding-left: 10px !important;
+            margin-left: 0px;
+			padding-right:10px;
+        }
+		
+		.time-container{
+			position:absolute; 
+			top:590px; 
+			left:25px; 
+			z-index:1; 
+			background-color:hsla(0,0%,0%,0.70);
+			border-radius:8px; 
+			width:172px; 
+			padding-left:8px;
+		}
+		
+		.timetext{
+			font-size:16px;
+			font-stretch:wider !important;
+			font-family:"Caviar" !important;
+			font-weight:lighter;
+		}
+		
+		  .cblink{
+        animation:blinker 2s linear infinite;
+        -moz-animation:blinker 2s linear infinite;
+		-o-animation:blinker 2s linear infinite;
+		-webkit-animation:cblinker 2s linear infinite;
+    }
+    @keyframes cblinker{
+        50% { opacity:0.1;}
+    }
+     @-moz-keyframes cblinker{
+        50% { opacity:0.1;}
+    }
+	 @-o-keyframes cblinker{
+        50% { opacity:0.1;}
+    }
+    
+    @-webkit-keyframes cblinker{
+        50% { opacity:0.1;}
+    }
+	
+	p {
+		padding:0px !important;
+	}
+	
+
+
+
+@font-face{
+	font-family:'Bebas';
+	src: url(../fonts/BebasNeue.otf);
+}
+
+@font-face{
+	font-family:'Caviar';
+	src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face{
+	font-family:'time';
+	src: url(../fonts/digital-7.ttf);
+}
+
+@font-face{
+	font-family:'steelfish';
+	src: url(../fonts/steelfish%20rg.ttf);
+}
+
+@font-face{
+	font-family:'Caviar';
+	src: url(../fonts/CaviarDreams.ttf);
+}
+
+@font-face{
+	font-family:'calibri';
+	src: url(../fonts/calibri.ttf);
+}
+
+
+@media screen and (max-width:1000px){
+
+	body {
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.footer{
+		position:absolute;
+		bottom:0px;
+		width:100%;
+	}
+	
+	.top{
+		margin-top:80px;
+	}
+	
+	.heding{
+		margin-top:40px;
+		margin-bottom:70px;
+	}
+	
+	.axisimg{
+		height:95px;
+		width:321px;
+	}
+	
+	.main{
+		font-size: 32px;
+		height: 680px;
+		box-shadow: 0px 0px 4px 2px #D8FE01; 
+		padding: 40px;
+		padding-top:20px;
+		background-color:hsla(0,0%,0%,0.54);
+		margin-bottom:40px;
+	}
+	
+	.caroucon{
+		margin-top:45px;
+	}
+	
+	.chevron-right{
+		font-size:32px;
+	}
+
+}

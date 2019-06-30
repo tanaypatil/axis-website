@@ -1,0 +1,355 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 KARTAVYA</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+
+<style>
+
+	.nav-pills li{
+		padding:0px 5px;
+	}
+	
+	input{
+        border-radius: 10px; 
+    }
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 7k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">KARTAVYA</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#rounds">ROUNDS</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+            <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#judge">JUDGING CRITERIA</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                    <span class="larger">“We make living by what we get but we make life by what we give.”</span><br><br>
+                    We all have in one way or the other benefitted from the society, so it’s time to give something back.<br>
+                    If you feel so, then you have found your way and if not, Kartavya is a right place to start with<br>
+                    KARTAVYA, brings with it the real problems faced by NGOs and several communities in the form of a<br>
+                    problem statement. It would challenge your intellect and make you think out of the box to win it.<br>
+                    The winners of KARTAVYA’16 will have the opportunity to work as a social intern abroad .<br><br>
+
+                </p>
+            </div>
+            
+
+            <div id="rounds" class="tab-pane fade">
+                <div class="menuscroll"> <p>
+                    This event would consist of two rounds:<br><br>
+                    <span class="larger">QUALIFIER ROUND</span><br>
+                    In this particular round,the participants would be given a problem statement and they will have to<br>
+                    submit an abstract based on it.These would be problems faced by ngo’s. Round 1 consists of two parts :<br><br>
+                    <!--<span class="large bold">Part A :</span>-->
+                    This problem satement has to be answered in maximum 1000 words . The solution should be more practical<br>
+                    and be applicable in real life scenario . Also mention your name, college and department in the abstract.<br><br>
+                    <!--<span class="large bold"> Part B:</span>
+                    This part consists of 3 questions out of which you need to answer any one . Word limit is 150-200 words .<br>
+                    Abstract should be uploaded to the link kartavya@axisvnit.org and then participants would be short<br>
+                    listed for the next round.<br><br>-->
+                    <span class="larger">FINAL ROUND</span><br>
+                    These shortlisted candidates would then have to do case study on the main  problem statement and <br>
+                    prepare a presentation which would be presented to the panal. The winner would be selected based on<br>
+                    the points scored.<br>
+                </p></div>
+            </div>
+
+
+            <div id="problem" class="tab-pane fade">
+                <p>
+                    <span class="larger">QUALIFIER ROUND</span> - [Last Date of Submission extended to September 22, 2016]<br>
+                    <!--
+                    <span style="padding:5px; box-shadow:0px 0px 1px 2px #FFFFFF">
+                    Enclosures of abstract of Qualifier round should be Part A + 2 solutions from Part B
+                    </span>
+                    <br>--><br><span class="large bold">Part A:</span><br>
+                    India’s most of the population lives in slums and are deprived of nutrition, education and a descent
+                    culture. In this pool of poverty and innocence grows a worm of addiction of children to tabacoo,
+                    liquor and smoking habits. These things at such a soft tender age rings an alarm in our society.
+                    Write few ways how the children below 14 years can be protected from such a disastrous addiction in
+                    their slums? Suggest ways about how you can change their livelihood .<br><br>
+
+
+                    <span class="larger" >FINAL ROUND</span> - [Last Date of Submission is September 25, 2016]<br>
+                    <span class="larger">Click 
+                    <a target="_blank" href="https://drive.google.com/file/d/0B2Tbeo1DJpp1STBVc1ZmbkJBVjdMaTdMcXg3Zk9ENlUxR0tV/view?usp=sharing">here</a> 
+                    to download the entire problem statement.</span>
+                    <!--<span class="large bold">Part B:</span><br>
+                    <ol>
+                        <li class="prblm_ul">
+                            Yes, India is developing..people are migrating from villages to cities and are getting a <br>
+                            good lifestyle. But when people migrate they take away their skills with them and hence the<br>
+                            village gets deprived of their barbers, helpers, mechanics,sweepers etc (for eg.).So, <br>
+                            nowadays for even  small things villagers need to travel a lot.<br>
+                            Write down ways how you can use the existing human resources of the villagers w.r.t. to their
+                            <br>needs for themselves in an intelligent manner.
+                        </li><br>
+                        <li class="prblm_ul">
+                            For any cause you stand and work for, Money or funds is the utmost thing you need during<br>
+                            your executions. And Money is difficult , hence a problem!! Everyone hopes for Donation, but<br>
+                            donations never satisfies the needs. And hence each and every, big or small, old or newly <br>
+                            started, every NGO in the city face the question of raising funds!<br>
+                            Put forward some entrepreneurial ideas to solve this evergreen issue of the NGO’S in<br>
+                            Educational, Health and Agricultural sectors(separately).
+                        </li><br>
+                        <li class="prblm_ul">
+                            In this nation where Agriculture is considered to be its primary occupation , there are no<br>
+                            longer wealthy farmers with surplus  hectare of lands.<br>
+                            Majority of Indian farmers own a land of 1 or 2 hectares. In such a small amount of land<br>
+                            which gives seasonal peaks and hence a seasonal income, their living goes terrible. And in<br>
+                            this peak period, to add some more problems, the wild animals and herds come and destroy<br>
+                            their crops. This is seen as a very big problems for the villagers and farmers. Suggest cost
+                            <br>effective and easy to implement ways to protect their fields.
+                        </li>
+            </ol>-->
+                </p>
+            </div>
+            
+            <div id="judge" class="tab-pane fade">
+                <p>
+                	1. The judges will make all the decisions purely on the basis of abstract and presentation . <br>
+                    2. Points distribution would be given on day of Round 2 .
+                </p>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <p>
+                  <ul>
+                	<li class="prblm_ul">Number of participants in a group should not exceed 3.</li>
+                    <li class="prblm_ul">Abstract should be mailed to kartavya@axisvnit.org in a PDF format.</li>
+                    <li class="prblm_ul">Submission of abstract for round 1 should be on or before 20th September 2016.</li>
+                    <li class="prblm_ul">
+                    The solutions the participants come up with should be technical, cost efficient and easy to implement.
+                    </li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                
+                	<span class="col-lg-4 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">MAHESH BHADE</span>
+                    <br>+91-7350042360
+                    <br><span class="contact_mail">maheshbhade19@gmail.com</span></span>
+                    
+                    <span class="col-lg-3 col-md-offset-3 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">N SIVA MOUNI</span>
+                    <br>+91-7757835722
+                    <br><a href="mailto:sivamouni.76@gmail.com" class="contact_mail">sivamouni.76@gmail.com</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-5 col-md-offset-4 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">SUMAJA POKURI</span>
+                    <br>+91-9049458462
+                    <br><a href="mailto:sumajapokuri156@gmail.com" class="contact_mail">sumajapokuri156@gmail.com</a></span>
+                
+                </p>
+            </div>
+            
+          <div id="register" class="tab-pane fade ">
+                <div class="form">
+             <form role="form" class="form-horizontal" method="post" action="{% url 'kartreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          
+                        <br>
+                    	
+                    	    <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Team Head</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                      <div class="row">
+
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>    
+       </div>
+                <!--<p class="center">STARTING SOON</p>-->
+            </div>
+            
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

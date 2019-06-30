@@ -1,0 +1,172 @@
+/* CSS Document */
+
+
+body {
+	background-image: url(../images/i2.jpg);
+	background-size:100% 200%;
+	background-repeat:no-repeat;
+	background-position:40% 30%;
+}
+
+.back{
+	position:absolute;
+	top:60px;
+	left:35px;
+	font-size:24px;
+	color:#575757;
+}
+
+.back:hover{
+	transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	color:#474747;
+}
+
+.profdiv{
+	background-color: #3c3c3c;
+	border-radius:50%; 
+	border-color: hsla(0,0%,74%,0.74); 
+	height:170px; width:170px; 
+	border-width:8px; 
+	border-style:double;
+	align-content:center;
+	align-items:center;
+	background-image:url(../images/teambckg.jpg);
+	background-size:100% 100%;
+	transition:all 3s;
+	-webkit-transition:all 3s;
+	-o-transition:all 3s;
+	-moz-transition:all 3s;
+	margin-bottom:38px;
+	padding:0px;
+	opacity:1;
+}
+
+.profdiv:hover{
+	color:hsla(41,100%,59%,1.00);
+	border-style:solid;
+	font-size:large;
+	background-size:150% 150%;
+	opacity:1;
+}
+
+.redborder{
+	border-color:hsla(359,100%,59%,1.00);
+}
+.yellowborder{
+	border-color:hsla(45,100%,59%,1.00);
+}
+.blueborder{
+	border-color:hsla(205,100%,53%,1.00);
+}
+.greenborder{
+	border-color:hsla(106,97%,56%,1.00);
+}
+
+.redborder:hover{
+	border-color:hsla(359,100%,59%,0.60);
+}
+.yellowborder:hover{
+	border-color:hsla(45,100%,59%,0.60);
+}
+.blueborder:hover{
+	border-color:hsla(205,100%,53%,0.60);
+}
+.greenborder:hover{
+	border-color:hsla(106,97%,56%,0.60);
+}
+
+
+.top:hover{
+	background-position:top;
+}
+.bottom:hover{
+	background-position: bottom;
+}
+.right:hover{
+	background-position:right;
+}
+.left:hover{
+	background-position:left;
+}
+
+.heading{
+	font-size:56px;
+	color:#181818;
+	font-family:"BTF";
+	letter-spacing:0.02em;
+}
+
+.head{
+	margin-bottom:90px;
+	margin-right:25px;
+	margin-top:15px;
+	margin-left:15px;
+}
+
+.tophr{
+	height:0.5px;
+	background-color:#000000;
+	color:#000000;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+
+.text{
+	font-family:"Franchise";
+	font-size:24px;
+	color:#454545;
+	margin-top:30px;
+	margin-left:12px;
+	line-height:27px;
+}
+
+.first{
+	margin-left:125px;
+}
+
+.text1{
+	font-family:"Franchise";
+	font-size:23px;
+	color:#454545;
+	margin-top:40px;
+	margin-left:5px;
+	line-height:24px;
+	text-align:center;
+}
+
+.text2{
+	font-family:"Franchise";
+	font-size:23px;
+	color:#454545;
+	margin-top:55px;
+	margin-left:10px;
+	line-height:24px;
+	text-align:center;
+}
+
+.text3{
+	font-family:"Franchise";
+	font-size:23px;
+	color:#454545;
+	margin-top:55px;
+	margin-left:10px;
+	line-height:24px;
+	text-align:center;
+}
+
+
+
+@font-face{
+	font-family:'Franchise';
+	src: url(../fonts/Franchise-Bold.ttf);
+}
+
+
+@font-face{
+	font-family:'BTF';
+	src: url(../fonts/basictitlefont.ttf);
+}

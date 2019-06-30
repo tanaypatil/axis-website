@@ -1,0 +1,57 @@
+/* CSS Document */
+
+#home{
+	position:fixed;
+	top:35px;
+	left:20px;
+	font-size:30px;
+	color:hsla(0,0%,0%,0.63);
+}
+#home:hover{
+	color:hsla(0,0%,0%,0.88);
+	transform:scale(1.1);
+}
+
+@font-face{
+	font-family:'Bebas';
+	src: url(../fonts/BebasNeue.otf);
+}	
+
+.pageheading{
+           font-family:"Bebas";
+		   font-size:56px !important;
+		   letter-spacing:0.1em;
+        }
+        .shadow{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .hrclass{
+            border: none;
+            height: 1px;
+            /* Set the hr color */
+            color: #333; /* old IE*/
+            background-color:darkgrey;  /*Modern Browsers */        
+    }
+        .title img{
+            width:300px;
+            height:200px;
+        }
+        .eventtitle img{
+            width:200px;
+            height:120px;
+            
+        }
+        .noeventtitle img{
+            width:170px;
+            height:100px;
+            
+        }
+        .img-responsive{
+            margin:0 auto;
+        }
+        .icad{
+             width:200px;
+            height:100px;
+            
+        }

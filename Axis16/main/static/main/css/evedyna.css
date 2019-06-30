@@ -1,0 +1,94 @@
+/* CSS Document */
+
+ .menuscroll{
+        max-height:310px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+		text-align:justify;
+		color:#FFFFFF;
+    }
+    .menuscroll::-webkit-scrollbar {
+    width: 4px;
+
+    }
+     .menuscroll::-moz-scrollbar {
+    width: 4px;
+
+    }
+     .menuscroll::-o-scrollbar {
+    width: 4px;
+
+    }
+/* Track */
+.menuscroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px 3px hsla(0,0%,100%,0.59);
+	box-shadow:inset 0 0 6px 3px hsla(0,0%,100%,0.59);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.menuscroll::-moz-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ .menuscroll::-o-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+.menuscroll::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #156AFF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.menuscroll::-webkit-scrollbar-thumb:window-inactive {
+	background: #156AFF;
+}
+.menuscroll::-moz-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #156AFF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.menuscroll::-moz-scrollbar-thumb:window-inactive {
+	background: #156AFF;
+}
+.menuscroll::-o-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #156AFF;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.menuscroll::-o-scrollbar-thumb:window-inactive {
+	background: #156AFF;
+}
+
+
+.back{
+	color:hsla(0,0%,100%,0.51);
+	font-size:22px;
+	position:relative;
+	top:55px;
+}
+
+.back:hover{
+	color:#FFFFFF;
+	transform:scale(1.07);
+}
+
+@media screen and (max-width:1000px){
+	.menuscroll{
+		overflow:visible;
+		max-height:610px;
+	}
+}
+

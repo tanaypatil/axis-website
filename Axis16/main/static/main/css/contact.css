@@ -1,0 +1,303 @@
+/* CSS Document */
+
+body {
+	background-image:url(../images/tempbckg.jpg);
+	background-size:100% 100%;
+}
+	
+.maincon{
+	padding:0px !important;
+}
+
+a {
+    color: inherit;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.back{
+    color: hsla(0,0%,100%,0.5);
+    font-size: 24px !important;
+    position: fixed;
+    top: 40px;
+    left: 35px;
+}
+.back:hover{
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.heading{
+	font-size:56px;
+	color: #FFFFFF;
+	font-family:"Bebas";
+	letter-spacing:0.15em;
+	text-shadow:2px 2px 5px hsla(0,0%,0%,0.52);
+}
+
+.head{
+	padding:10px;
+	background-color:hsla(46,100%,54%,0.28);
+}
+
+.contact{
+	padding:5px !important;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:"champ";
+	letter-spacing:0.1em;
+	line-height:29px;
+}
+
+.cbox{
+	margin-top:35px;
+}
+
+.cname{
+	font-size:27px;
+}
+
+.cnum{
+	font-size:21px;
+}
+
+.cmail{
+	font-size:24px;
+	color:#FFFFFF;
+	font-family:"champ";
+	margin-left:10px;
+	letter-spacing:0.1em;
+}
+
+.cmail:hover{
+	color:#FFC815 !important;
+	text-decoration:none !important;
+}
+
+.cons{
+	border-right:3px double #FFFFFF;
+}
+
+.lam{
+	font-size:36px;
+	color:#FFC815;
+	font-family:"Bebas";
+}
+
+.msgbox{
+	padding-left:50px;
+}
+
+#form{
+	padding-left:25px;
+}
+
+.ta{
+	background-color:hsla(0,0%,100%,0.27);
+	border-radius:0px !important;
+	height:170px !important;
+    margin-top: 37px;
+    margin-bottom: 10px;
+}
+
+.cua{
+	font-size:36px;
+	color:#FFC815;
+	font-family:"Bebas";
+}
+
+.soccon{
+	font-size:24px !important;
+	color:#FFFFFF;
+}
+
+
+.mailbox{
+	margin-left:115px;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+.mailbox:hover{
+	color:#FFC815;
+}
+
+.conbox{
+	margin-top:10px;
+	margin-bottom:45px;
+}
+
+.addr{
+	font-size:21px;
+	color:#FFFFFF;
+	font-family:"champ";
+	margin-left:20px;
+}
+
+.phone{
+	font-size:48px !important;
+}
+
+.addrbox{
+	margin-bottom:75px !important;
+}
+
+
+#login{
+   width:100px;
+	height:35px;
+	border-radius:3px;
+	background-color:#FFC815;
+	color:#000000;
+	font-family:"Bebas";
+	letter-spacing:0.07em;
+	font-size:20px;
+	font-weight:500;
+    border-bottom: 8px ridge #FFB515;
+}
+#login:hover{
+	background-color:#EBB813;
+}
+#login:focus{
+	border:none !important;
+	background-color:#EBB813;
+}
+
+
+/*footer*/
+	
+	
+	.footer{
+		margin-top:20px;
+        background-color:hsla(0,0%,0%,0.49);
+        padding-top:13px;
+        padding-bottom:10px;
+        height: fixed;
+    }
+    
+    .social-icon{ 
+        font-size:18px !important;
+        padding-left:15px;
+        font-style:normal;
+    }
+    .social-icon:hover{
+        background:none !important;
+        border:none !important;
+        text-decoration:none !important;
+    }
+    .social-icon:focus{ 
+        padding-left:15px;
+        font-style:normal;
+    }
+    
+    .fb{
+        background:none !important;
+		color:#FFFFFF;
+    }
+    .fb:hover{
+        color:#3B5999;
+    }
+    .fb:focus{
+        color:#3B5999;
+    }
+    .gp{
+        background:none !important;
+		color:#FFFFFF;
+    }
+    .gp:hover{
+        color:#dc4b38;
+    }
+    .gp:focus{
+        color:#dc4b38;
+    }
+    
+    .tw{
+        background:none !important;
+		color:#FFFFFF;
+    }
+    .tw:hover{
+        color:#00aced;
+    }
+    .tw:focus{
+        color:#00aced;
+    }
+    
+    .in{
+        background:none !important;
+		color:#FFFFFF;
+    }
+    .in:hover{
+        color:#0077b5;
+    }
+    .in:focus{
+        color:#0077b5;
+    }
+
+    .ins{
+        background:none !important;
+		color:#FFFFFF;
+    }
+    .ins:hover{
+        color:#de3368;
+    }
+    .ins:focus{
+        color:#de3368;
+    }
+    
+    .yt{
+        background:none !important;
+		color:#FFFFFF;
+    }
+    .yt:hover{
+        color:#ce2d2c;
+    }
+    .yt:focus{
+        color:#ce2d2c;
+    } 
+
+
+
+
+
+@font-face{
+	font-family:'champ';
+	src: url(../fonts/Champagne%20&%20Limousines.ttf);
+}
+
+@font-face{
+	font-family:'Bebas';
+	src: url(../fonts/BebasNeue.otf);
+}
+
+
+@media screen and (max-width: 1000px){
+    .conbox{
+        border: none !important;
+    }
+
+    .cmail{
+        margin-left: 20px;
+    }
+
+    .cbox{
+        border: none;
+    }
+
+    .lam{
+        position: relative;
+        left: 25px;
+    }
+
+    .ta{
+        height: 450px !important;
+    }
+
+    #login{
+        margin-bottom: 170px;
+    }
+
+    .cons{
+        border: none;
+    }
+}

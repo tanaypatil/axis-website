@@ -1,0 +1,49 @@
+body {
+    background-color: #272727;
+}
+
+.maincon{
+    margin-top: 25px;
+}
+
+#myimg:hover{
+    border: 6px solid #a9fd00;
+}
+
+.head{
+    color: #FF8C15;
+    font-size: 40px;
+    font-family: "Bebas";
+    letter-spacing: 0.1em;
+    line-break: loose;
+}
+
+.answer{
+	color: #FFFFCC;
+	font-size: 22px;
+    letter-spacing: 0.1em;
+	font-family: "Bebas";
+}
+
+.hint{
+	color: #FFFFFF;
+	font-family: "caviar";
+	font-size: 14px;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+
+@font-face{
+		font-family:"Bebas";
+		src:url(../fonts/BebasNeue.otf);
+	}
+
+@font-face{
+		font-family:"time";
+		src:url(../fonts/digital-7.ttf);
+	}
+
+@font-face{
+		font-family:"caviar";
+		src:url(../fonts/CaviarDreams.ttf);
+	}

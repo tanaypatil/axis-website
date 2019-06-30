@@ -1,0 +1,70 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 221B BAKER STREET</title>
+<link rel="stylesheet" type="text/css" href="{% static 'baker/css/formthemelogin.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'baker/css/sofar.css' %}">
+<!--<script type = "text/javascript" >
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>-->
+</head>
+
+<body>
+
+<center>
+
+    {% block content %}
+	<div class="container-fluid maincon">
+
+        {% for quesn in quesns|slice:"level" %}
+
+        <div style="margin-top: 35px; margin-bottom:20px;" class="col-lg-12" >
+
+
+        <div class="col-md-6 col-md-offset-1">
+            <img src="{{ MEDIA_ROOT }}/{{ quesn.img.url }}" class="img-responsive img-thumbnail" alt="Yet to Discover."
+                 data-toggle="modal" data-target="#myModal" id="myimg">
+        </div>
+
+        <div class="col-md-offset-1 col-md-4">
+            <div class="head">{{ quesn.name }}</div>
+            <div class="answer"><span style="color: #0a6ebd"> Answer : </span>{{ quesn.answer }}</div>
+            <div class="hint"><span style="color: #FF0000"> HINT : </span>{{ quesn.hint }}</div><br>
+        </div>
+
+
+        <div class="modal fade change1" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <div class="hintmt"></div>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body hintc">
+                               Right click and save the image. <!-- <img src="{{ MEDIA_ROOT }}/{{ quesn.img.url }}" class="img-responsive" alt="Yet to Discover.">
+                           --> </div>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        {% endfor %}
+
+
+
+    </div>
+
+{% endblock %}
+</center>
+
+
+<script src="{% static 'baker/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'baker/js/bootstrap-3.3.6.js' %}"></script>
+</body>
+</html>
+

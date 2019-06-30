@@ -1,0 +1,192 @@
+/* CSS Document */
+
+ .t1{
+    animation: l1 0s ;
+     -webkit-animation: l1 0s ;
+      -moz-animation: l1 0s ;
+       -o-animation: l1 0s ;
+  }
+  .t2{
+    animation: l2 2s linear;
+    -webkit-animation: l2 2s linear;
+    -o-animation: l2 2s linear;
+    -moz-animation: l2 2s linear;
+  }
+  .t3{
+    animation: l3 1s linear;
+    -moz-animation: l3 2s linear;
+    -webkit-animation: l3 2s linear;
+    -o-animation: l3 2s linear;
+  }
+  .t4{
+    animation: l4 1s linear;
+    -webkit-animation: l4 2s linear;
+    -moz-animation: l4 2s linear;
+    -o-animation: l4 2s linear;
+  }
+
+  @keyframes l2{
+    0%{
+        right:200px;
+
+    }
+    50%{
+      right:200px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+  
+  @-webkit-keyframes l2{
+    0%{
+        right:200px;
+
+    }
+    50%{
+      right:200px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+  
+  @-moz-keyframes l2{
+    0%{
+        right:200px;
+
+    }
+    50%{
+      right:200px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+  
+  @-o-keyframes l2{
+    0%{
+        right:200px;
+
+    }
+    50%{
+      right:200px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+  @keyframes l3{
+    0%{
+        right:400px;
+
+    }
+    50%{
+      right:400px;
+
+    }
+    100%{
+        right:0px;
+    }
+    }
+  @-webkit-keyframes l3{
+
+    0%{
+        right:400px;
+                
+
+    }
+    50%{
+      right:400px;
+
+    }
+    100%{
+        right:0px;
+    }
+    }
+  
+  @-o-keyframes l3{
+    0%{
+        right:400px;
+                
+
+    }
+    50%{
+      right:400px;
+
+    }
+    100%{
+        right:0px;
+    }
+    }
+
+     @-moz-keyframes l3{
+    0%{
+        right:400px;
+                
+
+    }
+    50%{
+      right:400px;
+
+    }
+    100%{
+        right:0px;;
+    }
+    }
+  @keyframes l4{
+    0%{
+        right:600px;
+
+    }
+    50%{
+      right:600px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+ @-webkit-keyframes l4{
+    0%{
+        right:600px;
+
+    }
+    50%{
+      right:600px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+   @-o-keyframes l4{
+    0%{
+        right:600px;
+
+    }
+    50%{
+      right:600px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }
+   @-moz-keyframes l4{
+    0%{
+        right:600px;
+
+    }
+    50%{
+      right:600px;
+
+    }
+    100%{
+        right:0px;
+    }
+  }

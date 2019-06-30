@@ -1,0 +1,210 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 WALLSTREET</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+
+<style>
+	input{
+        border-radius: 10px; 
+    }
+    
+
+</style>
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 28k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">WALLSTREET</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                  <span class="larger">“The main thing about money, Bud, is that it makes you do things you don’t want to do.” 
+                  <br><span class="col-md-offset-8">-Lou Mannheim</span></span><br><br>    
+                  Ever wondered what it would feel like to be a part of the universe's elite 1%? WallStreet 2016 goes cosmic!                  Manage an economic tradefloor as you buy shares and sell stock. Collect the interstellar market's profits and                  achieve your destiny. Brokers looking to provide an exchange are all over the floor, along with prizes for the                  tycoon who generates the most revenue. Also, since becoming penniless is an achievement in itself, we have                  prizes for that as well! Come and get to know if you have it in you to be the Wolf of Wallstreet?
+                </p>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <p>
+                <span class="larger">
+                	As Mr. Warren Buffet rightly quoted, this game of stocks can be played by keeping in mind just 2                    rules:</span>
+                    <ul>
+                    <li class="prblm_ul">Rule #1: Never lose money.</li>
+                    <li class="prblm_ul">Rule #2: Never forget Rule#1.</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                
+                	<span class="col-lg-4 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">ASHISH SINGH</span>
+                    <br>+91-9130621649
+                    <a href="mailto:ashish1995aks@gmail.com" class="contact_mail">ashish1995aks@gmail.com</a></span>
+                    
+                    <span class="col-lg-4 col-md-offset-2 col-xs-5 col-sm-offset-3">
+                    <span class="contact_name">KULDEEP CHOUDHARY</span>
+                    <br>+91-9130871289
+                    <a href="mailto:saran.navdeep@gmail.com" class="contact_mail">saran.navdeep@gmail.com</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-4 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">SANKET ANSHUMAN</span>
+                    <br>+91-7083754861
+                    <a href="mailto:sanketanshuman@yahoo.co.in" class="contact_mail">sanketanshuman@yahoo.co.in</a></span>
+                    
+                    <span class="col-lg-4 col-md-offset-2 col-xs-4 col-xs-offset-4">
+                    <span class="contact_name">RACHANA SHENDE</span>
+                    <br>+91-9130866782
+                    <br><a href="mailto:rachanashende02@gmail.com" class="contact_mail">rachanashende02@gmail.com</a></span>
+                
+                </p>
+            </div>
+            
+            
+           <div id="register" class="tab-pane fade">
+                <div class="form">
+                    <form role="form" class="form-horizontal" method="post" action="{% url 'wallreg' %}">
+                        {% csrf_token %}
+                        <div class="form-group-sm ">
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-1" >
+                                <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                                <input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                                </div>
+                            </div>
+                            <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        
+                        <div class="row">
+                                
+                            <div class="col-sm-12 text-center">
+                                <input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                            </div><br><br><br class="visible-xs">
+                            </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        </div>
+                    </form>	
+                </div>
+            </div>
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

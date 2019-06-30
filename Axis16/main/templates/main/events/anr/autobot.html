@@ -1,0 +1,376 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 AUTOBOT</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+
+	input{
+        border-radius: 10px; 
+    }
+    
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 15.5k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">AUTOBOT</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+            <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#scoring">SCORING</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                    In the sixteenth year of the twenty first century the moment of truth is finally here. Earth is facing an                    alien apocalypse. The destructive weapons used by aliens are beyond any explanation.  The armed forces of                    Earth and alien spaceships are engaged in a brutal struggle. Meanwhile , countless innocent civilians are                    caught in middle of this battle and their lives are at stake. It’s up to you to design a line following                     robot which can tread safely between the Dark Black side and the Good White Side . 
+                </p>
+            </div>
+
+            <div id="scoring" class="tab-pane fade">
+                <p>
+                   <span class="larger"> SCORING -</span><br>
+                    <ul>
+                        <li class="prblm_ul"> <span class="large"> Round1 — </span><br>
+                         This is just a qualification round and 100 points will be awarded for completing this round.<br>
+                        Extra points will be awarded for speedy completion of the path as follows-<br>
+                        1st- 60 points, 2nd- 40 points, 3rd- 20 points<br>
+                        Note- For every restart 30 points will be deducted.</li>
+                        <li class="prblm_ul"><span class="large"> Round 2 --</span><br>
+                        <ol class="prblm_ul">
+                            <li class="prblm_ul">For each hand touch 20 points will be deducted.</li>
+                            <li class="prblm_ul">For every restart 50 points will be deducted.</li>
+                            <li class="prblm_ul">For successful navigation of the arena 500 points will be awarded.</li>
+                        </ol></li>
+                           </ul>
+                </p>
+            </div>
+
+            <div id="rules" class="tab-pane fade">
+                <div class="menuscroll"><p>
+
+                    <span class="larger"> ROBOT SPECIFICATION</span>
+                        <ul>
+                        <li class="prblm_ul"> The robot should fit inside a cube of 30cm.</li>
+                        <li class="prblm_ul"> Robot should be completely autonomous</li>
+                        <li class="prblm_ul"> The bot can be internally or externally powered.</li>
+                        <li class="prblm_ul"> The voltage at any point on the robot should not exceed 15 volts.</li>
+                        </ul>
+
+                  <span class="prblm_ul">
+                      Event managers and coordinators reserve the right to ask for explanation of the robot (programming,circuit,etc)
+                    </span>
+                      <ol>
+                    <li class="prblm_ul">Participants are allowed to adjust sensors(gain,position),change setting and make repairs.
+                        The judges shall arbitrate.</li>
+                    <li class="prblm_ul">Time Limit: a maximum of 10 minutes is allowed for a robot to complete the course.
+                        A robot that cannot complete<br> the course in the allotted time shall be disqualified.<br>
+                    Autonomous Control: once a robot has crossed the starting line it must remain fully autonomous.</li>
+                    <li class="prblm_ul"> Arena Edges: a robot that wanders off of the arena surface will be given maximum of extra 2 chances.</li>
+                    <li class="prblm_ul"> Losing the Line:<br>
+                    For round 2(final round)- Any robot that loses the line course must reacquire the line at the point where it <br>
+                    was lost, or at any earlier (e.g. already traversed) point, thus team uses its handtouch option.<br>
+                    <li class="prblm_ul"> Only 1 handtouch is allowed in a round, after 1 handtouch team has to  restart from start point.</li>
+                    <li class="prblm_ul">Second Attempt: Any robot that loses the line course and fails to reacquire it will be allowed <br>
+                        a maximum of two reattempt. The robot must start the course again from the beginning(after 1 handtouch).</li>
+                    <li class="prblm_ul">Power of Officials: the decisions of all officials regarding these rules and the conduct of the event
+                        <br>shall be final.</li>
+                    <li class="prblm_ul">All the robots will have to be submitted to the organisers before start ; and no changes<br> would be allowed
+                        to be made to robots afterwards.</li>
+                    <li class="prblm_ul"> Each team member should be registered on AXIS'16 website.</li>
+                    <li class="prblm_ul"> Between trials and event, participants should not feed information about the arena to the bot.</li>
+                    <li class="prblm_ul">Participants are not allowed to keep anything inside the arena other than the bot.</li>
+                    <li class="prblm_ul">In case of any disputes / discrepancies, the organizers’ decision will be final and binding.</li>
+                    <li class="prblm_ul">The participants are requested not to assume anything without discussing with the event managers.</li>
+                    <li class="prblm_ul">The organizers reserve the rights to change any or all of the above rules as they deem fit.</li>
+                    <li class="prblm_ul">Innovative ideas are welcome and separate awards may be given for best design of the bot,
+                        best bot and many more..</li>
+                    </ol>
+
+
+                </p></div>
+            </div>
+            
+            <div id="problem" class="tab-pane fade">
+                <div class="menuscroll"> <p>
+
+                        THIS EVENT WOULD COMPRISE OF TWO ROUNDS- FIRST QUALIFIER AND THEN FINAL round.<br>
+                        <ul>
+                        <li class="prblm_ul"><span class="larger"> Qualifier Round - BLACK LINE FOLLOWER</span><br>
+                        In the qualifier,the participant will be provided with a path, represented<br>
+                            by a black line. The autonomous robot should move from the source point to its<br>
+                            destination by traversing through the black line incessantly and navigates several<br>
+                            90 degree turns. The team which completes the above task qualifies for final.</li><br>
+                        <li class="prblm_ul"><span class="larger"> Final Round - MAZE FOLLOWER AND SOLVER</span><br>
+                            In the final round the participant will be provided with a more challenging path, comprising of <br>
+                            Dead End (Maze). Once again, the autonomous robot must travel from source point to destination point.<br>
+                        NOTE- THE BOT JUST HAVE TO REACH THE GOAL POINT, AND IS NOT REQUIRED TO RETRACE BACK TO STARTING POINT.</li>
+                        </ul><br>
+
+                        <div class="col-md-4 col-md-offset-1"><img src="{% static 'main/images/events/autobot/autobot1.jpg' %}"></div>
+                        <div class="col-md-4 col-md-offset-3"><img src="{% static 'main/images/events/autobot/autobot2.png' %}"></div>
+                        <br>
+                        <span class="prblm_ul"><span class="larger">Note : </span>
+                        Refer the above images for arena. These are tentative, they may change during event accordingly.</span>
+                </p></div>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                
+                	<span class="col-lg-3 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">PRAVIN SAHU</span>
+                    <br>+91-9922795270
+                    <br><a href="mailto:pravinsahu101@gmail.com" class="contact_mail">pravinsahu101@gmail.com</a></span>
+                    
+                    <span class="col-lg-4 col-md-offset-3 col-xs-6 col-xs-offset-2">
+                    <span class="contact_name">REGINOLD ANTONY</span>
+                    <br>+91-7276138957
+                    <br><a href="mailto:reginold.antony@yahoo.com" class="contact_mail">reginold.antony@yahoo.com</a></span>
+                
+                </p>
+            </div>
+            
+              <div id="register" class="tab-pane fade menuscroll">
+               <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'autobotreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+
+                        <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Team Head</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="foname" id="foname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focollege" id="focollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fomail" id="fomail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focon" id="focon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focity" id="focity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 5</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="finame" id="finame" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficollege" id="ficollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fimail" id="fimail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficon" id="ficon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficity" id="ficity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                        <div class="row">
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+
+                    </div>
+                </form>	
+            </div>
+
+        
+        </div>
+            
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

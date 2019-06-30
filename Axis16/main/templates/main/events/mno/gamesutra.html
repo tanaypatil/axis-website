@@ -1,0 +1,407 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 GAMESUTRA</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 50k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">GAMESUTRA</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#cs">COUNTER STRIKE 1.6</a></li>
+            <li><a data-toggle="pill" href="#nfs">NFS MW</a></li>
+            <li><a data-toggle="pill" href="#fifa">FIFA 14</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACTS</a></li>
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="cs" class="tab-pane fade in active">
+                <div class="menuscroll">
+                    <p>
+                        <ul>
+                        <li class="prblm_ul">Team of 5 members.</li>
+                        <li class="prblm_ul">All college student are allowed.</li>
+                        <li class="prblm_ul">Only 1 player swap per team</li>
+                        <li class="prblm_ul">Maps - de_dust2, de_inferno, de_nuke.</li>
+                        <li class="prblm_ul">Registration fee per clan would be ₹ 500.</li>
+                        <li class="prblm_ul">Atleast 1 college (VNIT) team will play in the quarter finals.</li>
+                        <li class="prblm_ul">All matches are to be played on 32 bit.</li>
+                        <li class="prblm_ul">Out station participants should register 2-3 days prior to the event to avoid                    any inconvenience.</li>
+                        <li class="prblm_ul">Top 10 clans of India will get direct entry to quarter finals</li>
+                        <li class="prblm_ul">Round time will be 1.75 and C4 timer will be 35 seconds buy time will be 15                    second, freeze will be 12 second</li>
+                        <li class="prblm_ul">In case of any dispute organisers will have the final say</li>
+                        <li class="prblm_ul">.cfg file is not allowed</li>
+                        <li class="prblm_ul">Automag and machine guns are not allowed</li>
+                        <li class="prblm_ul">In case of any technical failure in between any game the organisers will have                    the final say</li>
+                        </ul>
+                    
+                   </p>
+                    <div id="register" class="">
+                        <!--<div class="form">
+                            <form role="form" class="form-horizontal" method="post" action="{% url 'csreg' %}">
+                                {% csrf_token %}
+                                <div class="form-group-sm ">
+                                    <div class="row">
+                                        <div class="col-sm-2" >
+                                        <div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                    <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                    <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="foname" id="foname" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="focollege" id="focollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="fomail" id="fomail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="focon" id="focon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="focity" id="focity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                    <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 5</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="finame" id="finame" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="ficollege" id="ficollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="fimail" id="fimail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="ficon" id="ficon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="ficity" id="ficity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                <div class="row">
+                                        
+                                    <div class="col-sm-12 text-center">
+                                        <input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                                    </div><br><br><br class="visible-xs">
+                                    </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                </div>
+                            </form>	
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            
+            <div id="nfs" class="tab-pane fade menuscroll">
+                <p>
+                	<ul>
+                    <li class="prblm_ul">It will be a single player event.</li>
+                    <li class="prblm_ul">Registration fee will be ₹ 100 per head.</li>
+                    <li class="prblm_ul">Use of junkman is not allowed.</li>
+                    <li class="prblm_ul">Finals will be best of 3.</li>
+                    <li class="prblm_ul">Maps and Cars will be decided by event managers.</li>
+                    <li class="prblm_ul">In case of any dispute organisers will have the final say.</li>
+                    </ul>
+                </p>
+                    <div id="register">
+                        <!--<div class="form">
+                            <form role="form" class="form-horizontal" method="post" action="{% url 'nfsreg' %}">
+                                {% csrf_token %}
+                                <div class="form-group-sm ">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                              
+                                <div class="row">
+                                        
+                                    <div class="col-sm-12 text-center">
+                                        <input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                                    </div><br><br><br class="visible-xs">
+                                    </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                </div>
+                            </form>	
+                        </div>-->
+                   </div>
+            </div>
+            
+            <div id="fifa" class="tab-pane fade menuscroll">
+                <div class="">
+                    <p>
+                        <ul>
+                        <li class="prblm_ul">Keyboard will be provided.</li>
+                        <li class="prblm_ul">Participants can bring their own joystick (Joystick will not be provided by the                    organisers).</li>
+                        <li class="prblm_ul">For knockouts half time will be 4 minutes, for semifinal and final matches the                    halftime will be 6 minutes.</li>
+                        <li class="prblm_ul">Clubs or National will be decided on the spot.</li>
+                        <!--<li class="prblm_ul">In case of draw winner will be decided by red card then yellow card and then by                    no. of shots on target</li>-->
+                        <li class="prblm_ul">Maximum of 3 subs are allowed.</li>
+                        <li class="prblm_ul">Classic 11 and World 11 teams are not allowed.</li>
+                        <li class="prblm_ul">In case of any dispute organisers will have the final say.</li>
+                        <li class="prblm_ul">Registration fee will be ₹ 100 per head.</li>
+                        </ul>
+                  </p>
+                  <div id="register">
+                        <!--<div class="form">
+                            <form role="form" class="form-horizontal" method="post" action="{% url 'fifareg' %}">
+                                {% csrf_token %}
+                                <div class="form-group-sm ">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-1" >
+                                        <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                                        </div>
+                                        <div class="col-sm-2">
+                                        <input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                                        </div>
+                                    </div>
+                                    <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                              
+                                <div class="row">
+                                        
+                                    <div class="col-sm-12 text-center">
+                                        <input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                                    </div><br><br><br class="visible-xs">
+                                    </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                                </div>
+                            </form>	
+                        </div>-->
+                   </div>
+                </div>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                
+                
+                	<span class="col-lg-4 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">GAURAV NAIR</span>
+                    <br>+91-7718851462
+                    <a href="mailto:nairgaurav0596@gmail.com" class="contact_mail">nairgaurav0596@gmail.com</a></span>
+                    
+                    <span class="col-lg-4 col-md-offset-2 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">RAVI SASANK REDDY</span>
+                    <br>+91-8446180164<br>
+                    <a href="mailto:sasank96@yahoo.co.in" class="contact_mail">sasank96@yahoo.co.in</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-4 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">SHOBHIT AGARWAL</span>
+                    <br>+91-9923519736<br>
+                    <a href="mailto:shobhit.mylife@gmail.com" class="contact_mail">shobhit.mylife@gmail.com</a></span>
+                    
+                    <span class="col-lg-4 col-md-offset-2 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">YASH TRIPATHI</span>
+                    <br>+91-8446180164
+                    <br><a href="mailto:cfcyash@outlook.com" class="contact_mail">cfcyash@outlook.com</a></span>
+                
+                
+                </p>
+            </div>
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 221B BAKER STREET</title>
+<link rel="stylesheet" type="text/css" href="{% static 'baker/css/formthemelogin.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'baker/css/ques.css' %}">
+<script type = "text/javascript" >
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+</head>
+
+<body>
+
+<center>
+
+    {% block content %}
+	<div class="container-fluid maincon">
+
+    	
+        <!--main-->
+    	<div class="col-md-10 quecol">
+        
+        	<img class="img-responsive img-thumbnail queimg" src="{{ MEDIA_ROOT }}/{{ quesn.img.url }}" alt="quespic">
+            <br><br><br>
+            <div class="col-md-2 level">LEVEL: {{ quesn.level }}</div>
+            <form class="form-horizontal" role="form" method="post" action="{% url 'check' %}">
+                {% csrf_token %}
+            <div class="form-group-lg">
+            <div class="col-md-4 col-md-offset-2">
+            
+            	<input type="text" class="form-control" placeholder="Enter your answer here." id="answer" name="answer"/>
+                <br>
+                {% if res == False %}
+                    <span style="color: red;">Wrong Answer</span>
+                {% endif %}
+
+            
+            </div>
+            <div class="col-md-1">
+            	<input type="submit" class="btn btn-danger" value="submit" id="submit" name="submit"/>
+            </div>
+            
+
+        	</div>
+            </form>
+
+            <!--hint-->
+            <div class="col-md-1">
+               <button type="button" id="hintbtn" class="btn btn-warning" data-toggle="modal" data-target="#myModal">HINT</button>
+                <div class="modal fade change1" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <div class="hintmt">HINT</div>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body hintc">
+                                 <ul><li>{{ quesn.hint }}</li></ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+            </div>
+            
+            <div class="col-md-1">
+                <a target="_blank" href="sofar.html">
+                    <button type="button" id="hintbtn" class="btn btn-primary">Story So Far ...</button>
+                </a>
+            </div>
+
+       
+        
+        </div>
+    
+
+    
+    	<!--scoreboard-->
+    	<div class="col-md-2">
+            <div class="leadertitle">Score Here</div><br>
+            <!--<div>
+                <span class="col-md-offset-1 col-md-8 hscrn">Name</span>
+                <span class="col-md-2 hscrn">Score</span>
+            </div>-->
+            
+            {% for user in users|slice:"10" %}
+                <div class="scorebox col-md-12">
+                    <span class="col-md-1 scrcount">{{ forloop.counter }}.</span>
+                    {% if user.fname == name %}
+                        <span class="col-md-8 scrname" style="color: chartreuse">{{ user.fname}}</span>
+                    {% else %}
+                        <span class="col-md-8 scrname">{{ user.fname}}</span>
+                    {% endif %}
+
+                    <span class="col-md-2 scrscore">{{ user.level }}</span>
+                </div>
+            {% endfor %}
+        </div>
+
+        
+    </div>
+
+{% endblock %}
+</center>
+
+
+<script src="{% static 'baker/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'baker/js/bootstrap-3.3.6.js' %}"></script>
+</body>
+</html>

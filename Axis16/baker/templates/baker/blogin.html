@@ -1,0 +1,130 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 LOGIN</title>
+<link rel="stylesheet" type="text/css" href="{% static 'baker/css/formthemelogin.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'baker/css/blogin.css' %}">
+<script type = "text/javascript" >
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+</head>
+
+<body>
+<center>
+
+    {% block content %}
+
+	<div class="container-fluid maincon">
+    	
+        
+        <div class="container-fluid axisrow">
+        
+        	<div class="col-md-4 col-md-offset-0">
+            
+            	<img class="img-responsive axisimg" src="{% static 'baker/images/typowebeve.png' %}" alt="axis"/>
+            
+            </div>
+        
+        </div>
+        
+        
+        <!--Form col-->
+    	<div class="container formcon col-md-5 col-xs-12">
+        	
+            <!--left-->
+        	<div class="col-md-offset-1 col-md-10 col-xs-8 col-sm-offset-2 formdiv">
+            
+            	<form class="form-horizontal" role="form" method="post" action="{% url 'login2' %}">
+                    {% csrf_token %}
+                
+                	<div class="form-group-lg">
+                        {% if succ == False %}
+                            <div style="color: red; font-size: smaller">
+                                ENTER CORRECT CREDENTIALS.
+                            </div>
+                        {% endif %}
+
+                        <div class="col-md-10 col-md-offset-1">
+                    	<input class="form-control" type="text" name="fname" id="fname" placeholder="Your Name"/>
+                        </div>
+                        
+                        <br><br>
+                        
+                        <div class="col-md-10 col-md-offset-1">
+                        <input class="form-control" type="email" name="fmail" id="fmail" placeholder="Your e-mail"/>
+                        </div>
+                        
+                        <br><br>
+                        
+                        <div class="col-md-10 col-md-offset-1">
+                        <input class="form-control" type="text" name="idnum" id="idnum" placeholder="Your Event-Id"/>
+                        </div>
+                        
+                        <br><br><br><br>
+                        <div class="col-md-4 col-md-offset-4">
+                        <input class=" btn btn-warning" type="submit" id="submit" value="LOGIN"/>
+                        </div>
+                        
+                    </div>
+                
+                </form>
+            
+            </div>
+        
+        </div><!--Form col ends-->
+        
+        <div class="col-md-7 rulescon">
+            
+        	<div class="heading">How To Play</div>
+            
+            <div class="container-fluid">
+            
+            	<div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2 rulebox">
+                
+                	<p>
+                    	<ol>
+                        
+                        	<li class="rules">First register for the event from here and get an EventId.</li>
+                            <li class="rules">Now you are ready. Enter your EventId, Email and Name to get Started.</li>
+                            <li class="rules">Enter all your answers in lowercase letters..</li>
+                            <li class="rules">Do not include spaces or any special characters in answer..</li>
+                            <li class="rules">In case if you don't see the question login again.</li>
+                            <li class="rules">The answer is "pass" when the hint tells to enter pass.</li>
+                            <li class="rules">Keep refreshing the pages at regular intervals to get new hints.</li>
+                            <!--<li class="rules">cn,adbcacyuagciabchjavchjasvcjhcjhvchj.</li>-->
+                            <!--<li class="rules">cn,adbcacyuagciabchjavchjasvcjhcjhvchj.</li>-->
+                           <br><br>
+                        </ol>
+                    </p>
+                
+                </div>
+            
+            </div>
+        
+        </div>
+        
+        <div class="col-md-12 col-xs-12 footer">
+        
+        	<div>BEST of LUCK ...</div>
+        
+        </div>
+    
+    
+    </div>
+
+
+
+
+{% endblock %}
+
+
+</center>
+
+<script src="{% static 'baker/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'baker/js/bootstrap-3.3.6.js' %}"></script>
+</body>
+</html>

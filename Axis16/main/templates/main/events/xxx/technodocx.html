@@ -1,0 +1,343 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TECHNO.DOCX</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+    .nav li{
+        padding:5px !important;
+    }
+    #problem li{
+        font-size: 15px !important;
+    }
+    #rounds p{
+        margin: 0px;
+    }
+     #guidline p{
+        margin: 0px;
+    }
+ </style>
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 36k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-1">TECHNO.DOCX</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">ABOUT</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+             <li><a data-toggle="pill" href="#rounds">ROUNDS</a></li>
+             <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#guidline">GUIDELINES</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            <div id="event" class="tab-pane fade in active">
+                <!--<h3>Event Details</h3>-->
+                <p>
+                    Call to attention the amazing technological developments taking place in our country, and inspire young minds to think, learn and create
+                    <br><br>
+                    Techno.docx is a unique platform for all the budding researchers out there to showcase their innovative and original research or project ideas to a wider audience, and get their proposals appraised by some of the brightest and most astute minds in India. Do you have it in you to  pass our rigorous and critical review to open up the portal to true greatness?
+                     <br><br><a target ="_blank" href="https://drive.google.com/open?id=0B9H3Um8hNuyTUE54ckExMWZkRzdldHE3cnowaGMwUnE3SXZB"><span class="larger gm modebox">Tutorial</span><br><br>   </a>
+                </p>
+            </div>
+
+            <div id="problem" class="tab-pane fade menuscroll">
+                <!--<h3>Problem Statement</h3>-->
+                <p>Participate in this event by submitting your technical papers that may fall under any of the following Engineering Disciplines:
+                </p>
+                <br>
+                <ul>
+                    <li class="prblm_ul">Civil, Environmental Engineering and Architectural Sciences
+                    </li>
+                    <li class="prblm_ul">Mechanical Engineering and Allied Sciences
+                    </li>
+                    <li class="prblm_ul">Computer Science and Information Technology
+                    </li>
+                    <li class="prblm_ul">Chemical, Metallurgical and Material Sciences
+                    </li>
+                    <li class="prblm_ul">Electrical and Electronics Engineering
+                    </li>
+                </ul>
+                <p>
+                    The accepted papers will be showcased at the AXIS’16 in the form of a presentation delivered by the author, from 23th- 25th September, 2016 at VNIT Nagpur.
+                </p>
+                <br><a target ="_blank" href="https://drive.google.com/open?id=0B9H3Um8hNuyTbkx4RkZvcVJzbUdjUVlPRzNlVmhoVGRLRldB"><span class="larger gm modebox">Abstact</span><br><br>   </a>
+            </div>
+            <div id="rounds" class="tab-pane fade menuscroll">
+               <ol>
+                    <li class="prblm_ul">
+                        ROUND 1
+                         <ul>
+                             <li class="prblm_ul">This round is 'Online Abstract Submission'.</li>
+                             <li class="prblm_ul">Participants must submit an abstract of at most 250 words by 20th Semptember, 2016.</li>
+                             <li class="prblm_ul">The abstract must be submitted mentioning name of the event as the subject of mail, names of team members,contact numbers, email id at  technodocx@axisvnit.org</li>
+                             <li  class="prblm_ul">Students are urged to submit their abstracts as early as possible clearly mentioning their Axis ID’s and email id.
+                            </li>
+                             <li class="prblm_ul">Students are urged to submit their abstracts as early as possible clearly mentioning their Axis ID’s and email id.
+                            </li>
+                         </ul>   
+                    </li>
+                    <li class="prblm_ul">
+                         ROUND 2
+                         <ul>
+                             <li class="prblm_ul">This is the 'On-stage paper presentation'.</li>
+                             <li class="prblm_ul">Shortlisted students are expected to present their work on-stage in front of a panel of judges at VNIT Nagpur.</li>
+                             <li class="prblm_ul">Maximum time limit for the presentation is 8 minutes and for the Q&A session is 3 minutes.</li>
+                             <li class="prblm_ul">The judges will decide the winners. Their decision will be final and binding.</li>
+                         </ul> 
+                    </li>
+                </ol>
+            </div>
+
+            <div id="rules" class="tab-pane fade menuscroll">
+               <ul>
+                   <li class="prblm_ul">A maximum of 2 students per team are allowed to present a paper (one as author and another as co-author).</li>
+                   <li class="prblm_ul">In case of team participation, both the members are required to be present on the spot at the time of the event.</li>
+                   <li class="prblm_ul">Only genuine and original paper abstracts should be uploaded. Abstracts found copied from any source like internet/ journals etc. will be immediately disqualified.</li>
+                   <li class="prblm_ul">The presentations should be in .ppt or .pdf format . The presentation room is equipped with LCD projector.</li>
+                   <li class="prblm_ul">The time limit for one presentation will be 8 minutes and Q&A session for at most 3 minutes. A buzzer will be rung after 6 minutes to remind the participants about the time and a final buzzer will be rung at the end of 8 minutes. Any extension in the allotted time will result in loss of points.</li>
+                   <li class="prblm_ul">No requests regarding change in schedule of the paper presentation will be entertained under any circumstances.</li>
+                   <li class="prblm_ul">The abstract as well as the papers will be judged on the basis of their innovation, knowledge of the field and presentation skills. The decision of the judges will be final and binding.</li>
+                </ul>
+
+            </div>
+
+            <div id="guidline" class="tab-pane fade menuscroll">
+                <ol class="prblm_ul">
+                    <li class="prblm_ul"> Abstract
+                        <ul>
+                            <li class="prblm_ul">Objectives</li>
+                            <li class="prblm_ul">Beneficiaries (For whom)</li>
+                            <li class="prblm_ul">Value of results (Use)</li>
+                       </ul>
+                    </li>
+                    <li class="prblm_ul">Research
+                         <ul>
+                            <li class="prblm_ul">Present methods of tackling the problem (if any)</li>
+                            <li class="prblm_ul">Proposed Solution</li>
+                            <li class="prblm_ul">Alternate solutions /approaches</li>
+                            <li class="prblm_ul">Novelty of Approach: How is your solution better than existing products that address the same problem?</li>
+                       </ul>
+                    </li>
+                    <li class="prblm_ul">Technical report
+                         <ul>
+                            <li class="prblm_ul">Description of concepts, theories or approach involved in the proposed solution.</li>
+                            <li class="prblm_ul">Technical aspect of the proposed solution.</li>
+                            <li class="prblm_ul">Detailed technical specifications and pictorial representations (block diagrams)</li>
+                            <li class="prblm_ul">Description of the flow of operations demonstrating key features and functionality</li>
+                            <li class="prblm_ul">Performance estimate of the solution.</li>
+                            <li class="prblm_ul">Experimentation done to establish the workability of the above</li>
+                            <li class="prblm_ul">A link to the video of the working model/ prototype.</li>
+                       </ul>
+                    </li>
+                </ol>
+                <span class="larger prblm_ul"> RESULT</span>
+                    <ul class="prblm_ul" style="margin-left:35px;">
+                        <li class="prblm_ul">Actual findings, significant output of tests and analysis (Must be readable)</li>
+                        <li class="prblm_ul">Include problems encountered, believability of results, accuracy estimates
+                        </li>
+                        <li class="prblm_ul">Pros and Cons of your solution</li>
+                        <li class="prblm_ul">Utility of results</li>
+                    </ul>
+                </p>
+                <span class="larger prblm_ul"> Application</span>
+                    <ul style="margin-left:35px;">
+                        <li class="prblm_ul">Your idea as a solution to the problem</li>
+                        <li class="prblm_ul">Additional applications</li>
+                        <li class="prblm_ul">Benefits to the users</li>
+                    </ul>
+                </p>
+            </div>
+
+
+            <div id="contact_us" class="tab-pane fade">
+                <!--<h3>Contact us</h3>--><br>
+                <p style="text-align:center">
+                
+                	<span class="col-lg-4 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">HIMANSHU JHA</span>
+                    <br>+91-8879017759
+                    <br><a href="mailto:jhahimanshu.1996@gmail.com" class="contact_mail">jhahimanshu.1996@gmail.com</a></span>
+                    
+                    <span class="col-lg-3 col-md-offset-3 col-xs-5 col-sm-offset-3">
+                    <span class="contact_name">MANGESH BHENDALE</span>
+                    <br>+91-9689203459
+                    <br><a href="mailto:mbhendale@gmail.com" class="contact_mail">mbhendale@gmail.com</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-4 col-md-offset-4 col-xs-offset-4 col-xs-5">
+                    <span class="contact_name">SHUBHAM KUMBHALWAR</span>
+                    <br>+91-9527092298
+                    <br><a href="mailto:skumbhalwar0@gmail.com" class="contact_mail">skumbhalwar0@gmail.com</a></span>
+                
+                </p>
+            </div>
+
+             <div id="register" class="tab-pane fade">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'technoreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+                    	  <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>
+
+        
+             </div>
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

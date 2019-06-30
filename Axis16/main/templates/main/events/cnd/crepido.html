@@ -1,0 +1,355 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 CREPIDO</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+
+	.nav-pills li{
+		padding:0px 5px;
+	}
+	
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 18k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">CREPIDO</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#story">STORYLINE</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+            <li><a data-toggle="pill" href="#judging">JUDGING AND SCORING</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                  Bridge the gap between galaxies! Crepido puts your mechanical proficiency against gravity. Construct solid,                   secure bridges from flimsy popsicles sticks and simple glue. Show off your talent, creativity and dexterity.                   Can your bridge stand the test of gravity as it takes on unimaginable loads?  Showcase the marvel in your                   perception; show the world the build within. Bring a robust and captivating one and remember…Triangles are                   strong!
+                </p>
+            </div>
+            
+            <div id="problem" class="tab-pane fade">
+                <div class="menuscroll"><p>
+                      <span class="larger">
+                      Design a truss bridge using popsicle sticks (icecream sticks) satisfying the stated constraints.<br>
+                      Materials to be used</span>
+                      <ul class="prblm_ul">
+                        <li class="prblm_ul">Use popsicle sticks.</li>
+                        <li class="prblm_ul">Maximum number of popsicle sticks to be used: 500</li>
+                        <li class="prblm_ul">Only fevicol can be used as an adhesive, use of other adhesives may lead to                         disqualifications.</li>
+                        <li class="prblm_ul">Use of threads is not allowed.</li>
+                      </ul>
+                      
+                      <div class="prblm_ul larger">
+                      Overall bridge dimensions<br>
+                      </div>
+                      <ul>
+                      	<li class="prblm_ul">Length = not more than 70 cm, not less than 60cm</li>
+                        <li class="prblm_ul">Width = 10-12 cm (approximate length of one stick)</li>
+                        <li class="prblm_ul">Height (max.) = Refer the sample image</li>
+                        <li class="prblm_ul">Cross section of supporting columns (max) = 8x8 cm</li>
+                      </ul>
+                      
+                      <div class="prblm_ul larger">Weight of the bridge</div>
+                      <ul>
+                       <li class="prblm_ul">The weight of the bridge should not exceed the weight of 500 popsicle sticks</li>
+                      </ul>
+
+                    <div class="col-md-7">
+                        <img src="{% static 'main/images/events/crepido/crepido.png' %}" alt="" style="width: 562px; height: 291px">
+                    </div>
+                      
+                      <div class="prblm_ul larger col-md-4">Testing the bridge</div><br><br>
+                      <ul>
+                       <li class="prblm_ul">Teams must submit bridge 1 hour before<br> the competition for inspection.</li>
+                       <li class="prblm_ul">Inspection will test that the construction rules were<br> followed and will record the
+                           weight of the bridge.</li>
+                       <li class="prblm_ul">The bridges will then be subjected to loading<br> through a crusher canyon.
+                       The teams will have<br> the freedom to choose the loading points<br> (symmetric). Nothing will be provided to
+                           keep<br> the base of the bridge in place during loading.</li>
+                       <li class="prblm_ul">Once the bridge is in position, the loading tray<br> will be attached.
+                       The load will hang below the bridge, supported by two bars which rest on the deck of the bridge.</li>
+                       <li class="prblm_ul">Bridges will then be subjected to loading.</li>
+                       </ul>
+                       
+                       <div class="prblm_ul larger">Team size</div>
+                       <ul><li class="prblm_ul">1–4 students per team.</li></ul>
+                      
+               </p></div>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+
+                    <span class="col-lg-4 col-md-offset-0 col-xs-4">
+                    <span class="contact_name">AKSHAY SOMKUWAR</span>
+                    <br>+91-7709171521
+                    <br><a href="mailto:akshaysomkuwar91@gmail.com" class="contact_mail">akshaysomkuwar91@gmail.com</a></span>
+                    
+                    <span class="col-lg-4 col-md-offset-3 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">PRANAV THAKARE</span>
+                    <br>+91-7743865458
+                    <br><a href="mailto:pranavthakare7696@gmail.com" class="contact_mail">pranavthakare7696@gmail.com</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-4 col-md-offset-4 col-xs-4 col-sm-offset-4" style="padding-left:0px;">
+                    <span class="contact_name">TWINKLE JAIN</span>
+                    <br>+91-9168068387
+                    <br><a href="mailto:jnv.twinkle.2013@gmail.com" class="contact_mail">jnv.twinkle.2013@gmail.com</a></span>
+
+
+                </p>
+            </div>
+            
+                         <div id="register" class="tab-pane fade menuscroll">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'crepidoreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+                    	  <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Team Head</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="foname" id="foname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focollege" id="focollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fomail" id="fomail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focon" id="focon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focity" id="focity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        
+                      <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>
+        
+        </div>
+            
+            <div id="judging" class="tab-pane fade">
+                <div class="menuscroll"><p >
+                	
+                    <span class="larger">
+                    First the structure will be reviewed to check if it violates any rules mentioned above. The scoring of the                    structure will be based on performance as well as aesthetics.<br><br>
+                    Performance</span>
+                    <ul>
+                    <li class="prblm_ul">The greatest load prior to failure will be the bridge’s load capacity.</li>
+                    <li class="prblm_ul">The deflection of the bridge at yielding will be noted. If the deflection increases more                    than 1 cm,<br> then load at the deflection will be taken as bridge’s capacity.</li>
+                    <li class="prblm_ul">Width of deck should not be greater than 1.5 cm.</li>
+                    <li class="prblm_ul">Truss should be on the upper side...</li>
+                    <li class="prblm_ul">The efficiency of the bridge will be calculated.<br>
+                       Efficiency = Load Capacity of the bridge /Self Weight – Points deducted due to discrepancie</li></ul>
+                     
+                     <br>
+                     
+                    <span class="larger">
+                    Aesthetics</span><br><br>
+                     <span>Separate cash prize for aesthetically pleasing bridge model.<br>
+                     Violating any of the conditions mentioned will lead to deductions of points from the final score and may                     lead<br> to disqualification:</span>
+                     <ul>
+                     <li class="prblm_ul">Weight exceeds the limit<br>(Penalty of 20% of the total score)</li>
+                     <li class="prblm_ul">Dimensional specifications are not met<br>(Penalty of 10% of the total score)</li>
+                     <li class="prblm_ul">Use of materials, except the ones stated in rules ( Disqualification )</li>
+                    </ul>
+                    
+                </p></div>
+            </div>
+
+            <div id="story" class="tab-pane fade">
+                <p>
+
+                    A rise in demand of coal, oil and other minerals was envisaged by the government of a thriving state. They,                     after days of discussion opted for the use of railroads to transport the minerals and oils. It was favoured                     as it would allow to transport greater amount of goods in a less time. Moreover, it avoided roadway                     congestion. A government contractor was assigned a project to lay down railway tracks to facilitate the                     transport of minerals and oils to the state. But the railway lines could not be connected as they                      encountered a river. Engineers decided to connect the railway lines through a truss bridge over the river                      which would have the strength to bear a heavy freight locomotive. Now, imagine yourself in their position                      and construct a truss bridge using popsicle sticks. Use your inventiveness to make a sturdy and                      aesthetically pleasing bridge.
+
+                </p>
+            </div>
+
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

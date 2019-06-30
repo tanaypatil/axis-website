@@ -1,0 +1,328 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 TURBOFLUX</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+
+<style>
+	.nav-pills li{
+		padding:0px 5px;
+	}
+	input{
+        border-radius: 10px; 
+    }
+    
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 12k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">TURBOFLUX</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+            <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#judge">JUDGING CRITERIA</a></li>
+            <li><a data-toggle="pill" href="#faq">FAQ</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                	Remember Shah Rukh Khan’s movie SWADES which received an overwhelmingly strong critical acclaim                    around the globe where he sets up a small hydro-electric power plant that would solve the problem of                    irregular electricity and make the village self-sufficient. That’s what define  TURBOFLUX.
+                    Time to bring out the Bernoulli in you and experience your Eureka! moment at AXIS’16. Use your                    hydraulics knowledge to rotate a turbine by making water pass through several obstacles. Would you                    prefer a V-shaped or a U-shaped pipe for the flow of water? Which path will make the water fall with                    the greatest speed? Physics was never this fun!
+                </p>
+            </div>
+            
+            <div id="problem" class="tab-pane fade">
+                <div class="menuscroll"><p>
+                <div class="col-md-7 prblm_ul">
+                	 Participants have to take the water to a certain height using suction pumps (arena is shown in the fig.)                     overcoming obstacles in the path and various hurdles, as in water reaches the highest level with minimum                     losses. To measure the energy possessed with the water, it is gushed on to the turbine which is coupled to a                     dynamo and the voltage generated is measured.<br><br>
+                     The obsctales will be disclosed on the day of the event and the sequence of the obsctacles will be decided                     by the participants.<br>
+                     <br>
+                     <br>
+                     <img src="{% static 'main/images/events/turbo/turbo2.jpg' %}" width="257" height="196" alt=""/>
+                     <img src="{% static 'main/images/events/turbo/turbo3.png' %}" width="258" height="170" alt=""/>
+                     </div>
+                     
+                     <div class="col-md-4">
+                     <img src="{% static 'main/images/events/turbo/turbo1.jpg' %}" width="347" height="225" alt=""/><br><br><br>
+                     <span class="prblm_ul">Think…Which pipe will you prefer V-shaped or a U-shaped for flow of water??</span>
+                     </div>
+                     
+                </p></div>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                
+                	<span class="col-lg-4 col-md-offset-1 col-xs-5">
+                    <span class="contact_name">NAVEEN NARAYANASETTY</span>
+                    <br>+91-9960775694
+                    <br><a href="mailto:narayanasetty.naveen@gmail.com" class="contact_mail">narayanasetty.naveen@gmail.com</a></span>
+                    
+                    <span class="col-lg-3 col-md-offset-3 col-xs-4 col-sm-offset-3">
+                    <span class="contact_name">VAMSI KATTA</span>
+                    <br>+91-7798425956
+                    <br><a href="mailto:vamsikatta7@gmail.com" class="contact_mail">vamsikatta7@gmail.com</a></span>
+                    
+                <br><br><br><br><br>
+                
+                    <span class="col-lg-3 col-md-offset-5 col-xs-4 col-sm-offset-5">
+                    <span class="contact_name">SARITA BISWAL</span>
+                    <br>+91-9049555923
+                    <br><a href="mailto:saritabiswal25@gmail.com" class="contact_mail">saritabiswal25@gmail.com</a></span>
+                
+                </p>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <div class="menuscroll"><p>
+                
+                     <ul>
+                	<li class="prblm_ul">Maximum Number of participants per team : 3</li>
+                    <li class="prblm_ul">Participants should come with a turbine.</li><br>
+                    <li class="prblm_ul"><span class="larger">Turbine specifications:</span></li>
+                    <ol>
+                    <li class="prblm_ul">Diameter of turbine should not be more than 80 cm</li>
+                    <li class="prblm_ul">Bore diameter should be 6 mm.</li>
+                    <li class="prblm_ul">There is no restriction regarding type of material you use for making turbine.</li>
+                    <li class="prblm_ul">Weight of turbine should not be more than 1.5 kg.</li>
+                    </ol>
+                    <br>
+                    <li class="prblm_ul">The turbine should be strictly to the specification we have provided. Deviation from it                                          may cause disqualification.</li>
+                    <li class="prblm_ul">The arrangement of the obsctacles and the pumps on the arena as well as mounting of the                                         turbine will be done by the<br> Turbo Flux organisers.</li>
+                    <li class="prblm_ul">The participants will be allowed to control the time at which they want the pumps to be                                         switched on.</li>
+                    <li class="prblm_ul">Once the sequence of obstacles decided, no changes will be allowed.</li>
+                    <li class="prblm_ul">Points will be there for using lesser number of pumps than allowed.</li>
+                    </ul>
+                
+                
+                </p></div>
+            </div>
+            
+            
+            <div id="judge" class="tab-pane fade">
+                <p>
+                	•	Time water takes from start to reach to turbine.<br>
+                    •	Voltage generated due to rotation of turbine.<br>
+                    •	Meanwhile, other minor criteria will be revealed that day itself.<br>
+                    •	The team with the most innovative turbine will be given extra points.<br>
+
+                </p>
+            </div>
+            
+            
+            <div id="faq" class="tab-pane fade">
+                <div class="menuscroll"><p>
+                   <ol>
+                	<li class="prblm_ul">Is it chemical engineers event?<br>
+                       No, it is event for engineers of every branch. All you need to do is apply simple fluid mechanics                          concept studied in school.</li>
+
+                    <li class="prblm_ul">Is there any registration fees?<br>
+                       No, there is no registration fees. The only money that you have to spend is on making your own turbine. 
+                    </li>
+                   
+                    <li class="prblm_ul">When do we get to know about the obstacles and what are its pre-requisite?<br>
+                       On the day of event all the obstacles will be disclosed and then you have to decide how you have to                       <br>arrange your obstacles. You just have to come with your turbine.
+                    </li>
+                    
+                    <li class="prblm_ul">Is there any guidance regarding making of turbine?<br>
+                       Yes, a workshop is held few days before the event to give you an idea regarding what are the various                       <br>methods by which we can make turbine from daily use items and cost efficient.</li>
+
+                   </ol>
+                </p></div>
+            </div>
+            
+            
+                        <div id="register" class="tab-pane fade menuscroll">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'turboreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+                    	  <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul">Team Head</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                       
+                      <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>
+        
+        </div>
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 MANUAL ROBOTICS</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+	input{
+        border-radius: 10px; 
+    }
+    .nav-pills li{
+		padding:0px 5px;
+	}
+
+</style>
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-7 col-md-offset-1">MANUAL ROBOTICS</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+            <!--<li><a data-toggle="pill" href="#levels">LEVELS</a></li>-->
+            <li><a data-toggle="pill" href="#rules">POINTS CRITERIA</a></li>
+            <li><a data-toggle="pill" href="#arena">ARENA AND TUTORIALS</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <li><a data-toggle="pill" href="#register">REGISTER</a></li>
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                 <div class="menuscroll"><p>
+                    It is the period of civil war!!!<br><br>
+                    During the battle between the Rebels led by the Jedi Knights and the Evil Galactic Empire led by
+                     the Sith Lord Darth Vader who plots to build the empire’s ultimate weapon “DEATH STAR”,
+                     an armored space station with enough power to destroy the entire galaxy spies tried to get a route
+                     map to the energy source of the Death Star.<br><br>
+                    Be a Skywalker, a Jedi Knight assigned with a droid (R2D2) help the Resistance destroy the Death Star and bring peace to the galaxy.
+                   <br><br>Now your task!!<br>
+                   Imagine yourself to be a Skywalker and direct your droid (bot) to reach the main energy systems of
+                     the Death Star and destroy the energy source of the Death Star so that it spoils the dreadful plan of Darth Vader.
+                   <br><br><span class="larger"> MAY THE FORCE BE WITH YOU.</span>
+
+                 </p></div>
+            </div>
+            
+            <div id="problem" class="tab-pane fade">
+                 <div class="menuscroll"><p> The basic problem statement goes in this way.<br><br>
+                     Build a manually controlled robot which is capable of grabbing different objects and crossing
+                     different types of terrain by reconstructing its path and broken bridge.<br><br>
+                     <!--<span class="larger bold cblink">BRIEF COMING SOON!</span>-->
+                     <span class="larger">Round 1</span><br>
+                     <ol>
+                        <li class="prblm_ul">Bot will start from the ground and climb thr slotted bridge which is inclinedat 25 degree to the ground.</li>
+                        <li class="prblm_ul">While crossing the horizontal bridge, bot should pick up the key(Cylindrical
+                        pipe 1.5" inch diameter) and put it<br> on the vertical rod which will be at some distance from first, which will start the button for lift.</li>
+                        <li class="prblm_ul">Further the bot has to go up using the lift which will be controlled by your team mate.</li>
+                        <li class="prblm_ul"> After reaching top position, bot should cross another bridge which will be made of two parallel rods
+                                              ,<br> which can be adjusted according to the distance between the wheels of your bot.</li>
+                        <li class="prblm_ul">After that you have to cross the hinged bridge.</li>
+                        <li class="prblm_ul"> Further ,put two yellow cube on pyramid and other three rod and yellow cube
+                        into the box.</li>
+                        <li class="prblm_ul">
+                            Push the box down, which complete further bridge by one rope pulley mechanism.
+                        </li>
+                        <li class="prblm_ul">The bot will take the cylindrical pipe (1.5"inch diameter) crossing the bridge
+                        and collect it in the container.<br> More the cylinders more will be the points.</li>
+                        <li class="prblm_ul">Push the container, along the rod way provided which will end your first round.</li>
+
+                    </ol>
+                 </p></div>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align: center">
+
+                    <span class="col-lg-3 col-md-offset-1 col-xs-4">
+                    <span class="contact_name">MONAL GEDAM</span>
+                    <br>+91-7378880223
+                    <br><a href="mailto:monalgedam123@gmail.com" class="contact_mail">monalgedam123@gmail.com</a></span>
+
+                    <span class="col-lg-3 col-md-offset-3 col-xs-4 col-xs-offset-4">
+                    <span class="contact_name">RAMAKRISHNA REDDY</span>
+                    <br>+91-7767049749
+                    <br><a href="mailto:ramakrishna.m1147@gmail.com" class="contact_mail">ramakrishna.m1147@gmail.com</a></span>
+
+                <br><br><br><br><br>
+
+                    <span class="col-lg-3 col-md-offset-4 col-xs-4 col-xs-offset-4">
+                    <span class="contact_name">SAURAV KUMAR</span>
+                    <br>+91-7798473600
+                    <br><a href="mailto:ksauravk835@gmail.com" class="contact_mail">ksauravk835@gmail.com</a></span>
+
+                </p>
+            </div>
+
+
+	    <div id="rules" class="tab-pane fade">
+		    <div class="menuscroll"> <p>
+                <ul>
+                <li class="prblm_ul"> CROSS 1st BRIDGE -> +5Points</li>
+                <li class="prblm_ul"> INSERT PIPE TO START LIFT -> +10 Points</li>
+                <li class="prblm_ul"> a) CROSS 2nd BRIDGE -> +25 Points<br>
+                    b) FALLING FROM BRIDGE -> -10 Points</li>
+                <li class="prblm_ul">CROSS HINGED BRIDGE -> +10 Points</li>
+                <li class="prblm_ul">PUT YELLOW CUBE ON PYRAMID -> +10Points (EACH)<br>
+                PUT RED CUBE IN BOX -> +5 Points(EACH)</li>
+                <li class="prblm_ul">TO PUSH THE BOX AND COMPLETE THE BRIDGE -> +10 Points</li>
+                <li class="prblm_ul"> GRABBING A PIPE AND PUTTING IN THE BOX -> +15 Points(EACH)</li>
+                <li class="prblm_ul">PUSHING THE LOST BOX -> +15 Points</li>
+                </ul><br><br>
+                <div class="prblm_ul"> END OF FIRST ROUND      TOTAL-> 150</div>
+
+            </p></div>
+	    </div>
+
+            <div id="arena" class="tab-pane fade">
+		    <div class="menuscroll">
+            <p>
+                <div class="col-md-6 col-md-offset-1">
+                    <img src="{% static 'main/images/events/electro/electro1.jpg' %}" alt="" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-md-5 prblm_ul"><br><br>These are tentative arena images as of now.<br>Stay tuned for more.</div>
+
+                <br><br><br><br><br><br><br><br><br><br>
+
+                <div class="col-md-6">
+                    <img src="{% static 'main/images/events/electro/electro2.jpg' %}" alt="" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'main/images/events/electro/electro3.jpg' %}" alt="" class="img-responsive img-thumbnail">
+                </div>
+                <!--<div class="col-md-6 col-md-offset-2" style="margin-top: 15px;">
+                    <img src="{% static 'main/images/events/electro/electro3.jpg' %}" alt="" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-md-4 prblm_ul"><br><br>These are tentative arena images as of now.<br>Stay tuned for more.</div>-->
+            </p></div>
+	    </div>
+
+            <div id="register" class="tab-pane fade menuscroll">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'manualroboreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+                    	  <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="foname" id="foname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focollege" id="focollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fomail" id="fomail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focon" id="focon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focity" id="focity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 5</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="finame" id="finame" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficollege" id="ficollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fimail" id="fimail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficon" id="ficon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficity" id="ficity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>
+                 <!--<p style="text-align:center;font-size:30px;"> STARTING SOON .</p>-->
+            </div>
+        
+        </div>
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

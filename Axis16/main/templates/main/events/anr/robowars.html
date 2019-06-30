@@ -1,0 +1,419 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 ROBOWARS</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/robowars.css' %}">
+
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+
+
+
+</style>
+
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 50k</span>
+             </span><i class="fa fa-arrow-right priceinfo"></i>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">ROBOWARS</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#problem">PROBLEM STATEMENT</a></li>
+            <li><a data-toggle="pill" href="#rounds">ROUNDS</a></li>
+            <li><a data-toggle="pill" href="#points">POINTS SYSTEM</a></li>
+            <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#refrain">REFRAIN FROM THESE</a></li>
+            <li><a data-toggle="pill" href="#faq">FAQ</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+            
+        <br>
+        
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                The ultimate intergalactic battle between the forces of this universe is about to  begin ! The forces of the                Jedi and the Sith are engaged in a disastrous struggle ! In this moment of imminent catastrophe it becomes                your incumbent duty to protect your Galactic Republic. Reinforce your bots with the latest cutting edge                technology , for the danger here is inevitable.Get ready for the ultimate showdown! We welcome you to the                future of wrestling!<br><br>Watch out this AXIS as the wars begin!!<br> <br>
+                <span style="font-size:30px;">COME, CRUSH, CONQUER AND TASTE VICTORY.</span>
+                </p>
+            </div>
+            
+            <div id="problem" class="tab-pane fade">
+                <p>
+                <b><span style="font-size:32px;; color:#016DC5;">Opponent should TREMBLE!!</span></b><br><br>
+                   Design and fabricate a wired/wireless, manually controlled robot capable of being victorious in the                    battlefield. The main objective should be to immobilize/destroy the opponent.
+                </p>
+            </div>
+           
+            <div id="contact_us" class="tab-pane fade">
+                <p style="text-align:center">
+                
+                    <span class="col-lg-3 col-md-offset-2 col-xs-4">
+                    <span class="contact_name">ADITYA SHIVAM</span>
+                    <br>+91-9561299129
+                    <a href="mailto:adishivam21@gmail.com" class="contact_mail">adishivam21@gmail.com</a></span>
+                    
+                    <span class="col-lg-3 col-md-offset-2 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">JAYESH KUMAR</span>
+                    <br>+91-8390529435
+                    <a href="mailto:jysharma1113@gmail.com" class="contact_mail">jysharma1113@gmail.com</a></span>
+                    
+                <br><br><br><br><br><br class="visible-xs">
+                
+                    <span class="col-lg-3 col-md-offset-2 col-xs-4">
+                    <span class="contact_name">RAVI AGARWAL</span>
+                    <br>+91-7387461573
+                    <a href="mailto:agarwalravi26@yahoo.in" class="contact_mail">agarwalravi26@yahoo.in</a></span>
+                    
+                    <span class="col-lg-3 col-md-offset-2 col-sm-offset-4 col-xs-4">
+                    <span class="contact_name">YOGESH JHA</span>
+                    <br>+91-8108000272
+                    <br><a href="mailto:yogesh1095@gmail.com" class="contact_mail">yogesh1095@gmail.com</a></span>
+                
+                </p>
+            </div>
+
+            <div id="register" class="tab-pane fade menuscroll">
+                 <div class="form">
+            	<form role="form" class="form-horizontal" method="post" action="{% url 'robowarsreg' %}">
+                    {% csrf_token %}
+                	<div class="form-group-sm ">
+                          <div class="row">
+                             <div class="col-sm-2" >
+                    		<div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                            </div>
+                          </div>
+                          <br>
+                    	  <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> TeamHead</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tname" id="tname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcollege" id="tcollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="tmail" id="tmail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcon" id="tcon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="tcity" id="tcity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="foname" id="foname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focollege" id="focollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fomail" id="fomail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focon" id="focon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="focity" id="focity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 5</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="finame" id="finame" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficollege" id="ficollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fimail" id="fimail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficon" id="ficon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="ficity" id="ficity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 6</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="siname" id="siname" placeholder="Name" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sicollege" id="sicollege" placeholder="College Name" type="text"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="simail" id="simail" placeholder="Email Id" type="email"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sicon" id="sicon" placeholder="Contact" type="text"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="sicity" id="sicity" placeholder="City" type="text"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                      <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>
+        
+        </div>
+            
+            <div id="rounds" class="tab-pane fade">
+                <div class="menuscroll"><p>
+                
+                	<span class="larger">Qualifying Round</span><br>
+                    <ol>
+                    
+                    	<li class="prblm_ul">This will be a knockout round. Match length : 5 mins.</li>
+                        <li class="prblm_ul">The main aim should be to destroy or immobilise the opponent bot.</li>
+                        <li class="prblm_ul">If none of the bots are destroyed during the match then the points structure ,that                        will be mentioned, will be followed.</li>
+                        <li class="prblm_ul">The teams qualifying this round reaches the semifinal round.</li>
+                    
+                    </ol><br>
+
+
+                   <p class="larger prblm_ul">Semifinal Round</p>
+                   <ol>
+                   <li class="prblm_ul">There will be two rounds of 3 mins each.</li>
+                   <li class="prblm_ul">The team that destroys the opponent team completely or which wins according to the points                   accumulated<br> in both the rounds finds way to the GRAND FINALS.</li>
+                   </ol>
+                   
+                   <p class="larger prblm_ul">Final Round</p>
+                   <ol>
+                   <li class="prblm_ul">There will be three rounds of 3 mins each. <br>The team that destroys the opponent team                    completely or which wins according to the points accumulated<br> in all the three rounds is the WINNER OF                    ROBOWARS AXIS’16.</li>
+                   </ol>
+
+                </p></div>
+            </div>
+            
+            <div id="points" class="tab-pane fade">
+                <p>
+                	Click <a target="_blank" href="https://drive.google.com/open?id=0B9H3Um8hNuyTQUJtTW8tQjZEWWM">here</a> for the document.
+                </p>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <div class="menuscroll"><p>
+                    <ul>
+                     <li class="prblm_ul">The maximum number of participants allowed per team is 6.</li>
+                     <li class="prblm_ul"> During the match only 2 members of the team will be allowed to operate the bot.</li>
+                    </ul>
+
+                    <span class="larger prblm_ul"> Robot Specifications </span>
+                       <ol>
+                        <li class="prblm_ul">Max permissible dimensions 65x65x85 cm at the starting of the match.</li>
+                        <li class="prblm_ul">Max permissible weight of the robot:35-40 Kg (excluding power supply).</li>
+                        <li class="prblm_ul">Cylinders for Pneumatics are excluded from the weight of the robot,
+                            <br>if and only if they are kept outside the arena at all times. Such robots are not eligible
+                            for wireless bonus.</li>
+                        <li class="prblm_ul">Cylinder pressure limit for pneumatics is 5 bar.</li>
+                        <li class="prblm_ul">36 volts between any two points in the circuit.</li>
+                        <li class="prblm_ul">Wireless robots will have an advantage in case of a tie.</li>
+                        <li class="prblm_ul">Use of Pneumatics is permitted.</li>
+                        <li class="prblm_ul">Any arrangement made only for hoisting the cables is not counted in maximum height limit.</li>
+                        <li class="prblm_ul">Participants must provide means(nozzle) to measure the cylinder pressure.</li>
+                        <li class="prblm_ul">All bot should have easily visible and controlled mobility in order to compete.</li>
+                        <li class="prblm_ul">COMPRESSER in any case will not be allowed.</li>
+                        <li class="prblm_ul">The event managers will have a final say in all the matters which occur during the event</li>
+                        </ol>
+                        <br>
+                    <span class="larger prblm_ul"> Arena Specifications </span><br>
+                     <span class="prblm_ul"> Dimension of the arena is 12x12 ft. </span>
+                </p></div>
+            </div>
+            
+            <div id="refrain" class="tab-pane fade">
+                <p >
+                    1. Wireless Robot should ensure zero interference.<br>
+                    2. Do not use any tether cables, projectiles, nets.<br>
+                    3. No chemical, inflammable or incendiary weapons are allowed.<br>
+                    4. No liquids are allowed.<br>
+                    5. Robots should not employ any RF jammers or any other similar equipment.<br>
+                    6. If any robot tries to or damages the arena the robot will be disqualified.<br>
+                    7. The event managers will have a final say in all the matters which occur during the event.<br>
+                </p>
+            </div>
+            
+            <div id="faq" class="tab-pane fade">
+                <p>
+                  <ol>
+                	<li class="prblm_ul"><span class="larger">Can members of the team be from different colleges?</span><br>
+                     Yes. They can be from different colleges provided they have a valid id card
+                     </li><br>
+                     <li class="prblm_ul">
+                     <span class="larger">Are there any restrictions on the Department of the participant?</span>
+                     <br>No
+                     </li><br>
+                     <li class="prblm_ul">
+                     <span class="larger">Will power supply sockets be provided by the organizers?</span><br>
+                     The participants will be provided with one 220V socket for powering up your bot. If the bot uses external                     power sources like battery, then it must be brought by the participants themselves.
+                     </li>
+                   </ol>
+                </p>
+            </div>
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

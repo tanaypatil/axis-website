@@ -1,0 +1,359 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="AXIS16, AXIS VNIT, axis16, axisvnit,vnit,axis,axis16,axisvnit.org,vnit techfest, Central India's Largest Technical Event
+        www.axisvnit.org,central india, largest technical festival, technical festival, technical events, nagpur, vnit nagpur, workshops,
+        attractions, social initiatives, hrlping others, colors of nagpur, against child labor, world environment day,vnit,
+         festival,Central India, Asia, best, biggest, largest, vnit, students, robots, country, campaign, initiative, sponsor, games, artists,
+      international, contacts, AXIS, AXIS id, AXIS_VNIT, AXISVNITNAGPUR, axisvnitnagpur, axis.vnit, awesome, largest,
+      , Science, Technology, lectures, exhibitions, social, exhibitions, axis2k16, axis16, Axis16,Axis2016,AXIS2016,AXIS2k16">
+        <meta name="description" content="AXIS'16: VNIT Nagpur presents Central India's Largest Science and Technology Festival">
+        <title>AXIS'16 VNIT, NAGPUR</title>
+        <link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/custom.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/font/flaticon.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/load.css' %}">
+
+        <style>
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            #splash {
+                background-image: url({% static 'main/images/flash.jpg' %});
+                background-size:cover;
+            }
+            @media screen and (max-width: 1000px) {
+                #splash{
+                    background-image: url({% static 'main/images/splash_mobile.jpg' %});
+                    background-size:cover;
+                }
+            }
+            .andro:hover{
+                color:#acfc01;
+                }
+            #background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            background: url({% static 'main/polina.jpg' %}) no-repeat;
+            background-size: cover;
+            }
+            body{
+
+                z-index:0;
+                margin:0;
+                padding:0;
+
+            }
+            #pageContent{
+
+                position: absolute;
+        }
+      </style>
+
+         
+    </head>
+
+<body id="index">
+    <div id="splash"></div>
+ <center id="maincontent">
+        
+    <div class=" container-fluid panel blackpanel">
+        
+        
+        <!--Axis Image-->
+        
+        <div class="row">
+            <div class="container hidden-xs axisimg">
+                <img src="{% static 'main/images/typowebindex.png' %}" alt="axis" width="321px" height="165px" class="img-responsive" />
+            </div>
+        </div>
+        
+          <div class="fixeddim">  
+            <div class="effect di" id="effect">
+                <span class="" id="dimenstion1"></span>
+                <span class="" id="dimenstion2"></span>
+                <span class="" id="dimenstion3"></span>
+                <span class="" id="dimenstion4"></span>
+                <span class="" id="dimenstion5"></span>
+                <span class="" id="dimenstion6"></span>
+            </div>
+          </div>
+       
+       <!--nav container-->
+        <div class="row" style="padding-top:30px;">
+            <div class="container col-md-offset-2 col-md-8 col-sm-12">
+            
+           
+            
+            <!--Navbar-->
+            
+            
+            
+                
+                <nav class="custom-nav">
+                
+                  <div class="container-fluid navcontainer">
+                
+                    <!-- Brand and toggle get grouped for better mobile display 
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                        data-target="#defaultNavbar1" aria-expanded="false">
+                        
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar menuicon"></span>
+                            <span class="icon-bar menuicon"></span>
+                            <span class="icon-bar menuicon"></span>
+                      
+                      </button>
+                      
+                     
+                     </div>-->
+                   
+                    <!-- Collect the nav links, forms, and other content for toggling --><!--large-->
+                    <div class="collapse navbar-collapse listdiv backeffect" id="defaultNavbar1">
+                   
+                      <ul class="nav navbar-nav" >
+                        <li ><a href="#" class="navlink active n1">HOME</a></li>
+                        <li><a href="events.html" class="navlink events n2">EVENTS</a></li>
+                        <li><a href="workshops.html" class="navlink n2">WORKSHOPS</a></li>
+                        <li><a href="attractions.html" class="navlink n4">ATTRACTIONS</a></li>
+                        <li><a href="socini.html" class="navlink n5">SOCIAL INITIATIVES</a></li>
+                      </ul>
+                      
+                      
+                      <ul class="nav navbar-nav navbar-right menuright">
+                        <li><a href="team/teamct.html" class="navlink2 n6">TEAM</a></li>
+                        <li><a href="sponsors.html" class="navlink2 n7">SPONSORS</a></li>
+                        <li><a href="contact.html" class="navlink2 n8">CONTACT US</a></li>
+                      </ul>
+                    
+                    </div><!-- /.navbar-collapse -->
+                    
+                   
+                  </div>
+                  <!-- /.container-fluid -->
+                </nav>
+                
+                
+                <!--Navbar ends-->
+                
+                        
+            </div>
+        </div><!--nav container ends-->
+
+
+        <!--axis small-->
+        <div class="row visible-xs axissm">
+        
+            <div class="container">
+            
+                <img src="{% static 'main/images/typowebindex.png' %}" width="160" height="78" alt=""/>
+            
+            </div>
+        
+        </div>        
+        
+        
+        <!--redefining reality-->
+        <div class="row" style="padding-top:0px; margin-top:0px;">
+        
+            <div class="container" style="padding-top:0px; margin-top:0px;">
+            
+                <p class=" col-md-12 rr center blink">
+                   <span class="l1">R</span><span class="l2">E</span><span class="l3">D</span><span class="l4">E</span><span class="l5">F</span><span class="l6">I</span><span class="l7">N</span><span class="l8">I</span><span class="l9">N</span><span class="l10">G</span> <span class="l11">R</span><span class="l12">E</span><span class="l13">A</span><span class="l14">L</span><span class="l15">I</span><span class="l16">T</span><span class="l17">Y</span>
+                </p>
+            
+            </div>
+        
+        </div>
+        
+        
+        
+        <!--small screen icons-->
+        <div class="row visible-xs ssicons" id="smicons">
+            <div class="container-fluid text-center">
+            
+                <a href="events.html" class="fi"> <div class="col-xs-3 fi">           
+                  <span class=" flaticon-events"></span>
+                  <span class="icon-text">EVENTS</span>
+                </div></a>
+                
+                <a href="workshops.html" class="fi"> <div class="col-xs-3 fi">
+                  <span class=" flaticon-workshop"></span>
+                  <span class="icon-text">WORKSHOPS</span>
+                </div></a>
+                
+                <a href="attractions.html" class="fi"> <div class="col-xs-3 fi">
+                <span class=" flaticon-attractions"></span>
+                <span class="icon-text">ATTRACTIONS</span>
+                </div></a>
+                
+                <a href="sponsors.html" class="fi"> <div class="col-xs-3 fi">
+                    <span class=" flaticon-sponsors"></span>
+                    <span class="icon-text">SPONSORS</span>
+                </div></a>
+                
+            </div>
+            
+            <br><br>
+            
+            <div class="container-fluid text-center">
+            
+                <a href="socini.html" class="fi"> <div class="col-xs-3 col-xs-offset-1 fi">
+                    <span class=" flaticon-social"></span>
+                    <span class="icon-text">SOCIAL INITIATIVES</span>
+                </div></a>
+
+                
+                <a href="contact.html" class="fi"> <div class="col-xs-4 fi">
+                    <span class=" flaticon-phone"></span>
+                    <span class="icon-text">CONTACT US</span>
+                </div></a>
+                
+                 <a href="team/teamct.html" class="fi"> <div class="col-xs-4 fi">
+                    <span class=" flaticon-team"></span>
+                    <span class="icon-text">TEAM</span>
+                </div></a>
+                
+            </div>
+        </div>
+        
+        
+        
+        <!--Large screen time-->
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timey.png' %}" alt="time left" style="margin-top:12px; margin-left:5px;" class="cblink">
+              <div class="time col-md-2 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-2 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-2 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-2 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+       </div>--></abbr>
+  
+
+        <div class="row footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-6">
+
+
+
+                    <div class="col-sm-4 col-sm-offset-2">
+                    <button type="button" class="btn btn-info btn-sm tbutton" data-toggle="modal" data-target="#myModal1">ACCOMMODATION</button>
+                        <!--<span class="separator">|</span>-->
+                    <!-- Modal -->
+                    <div class="modal fade change1" id="myModal1" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                                    <img src="{% static 'main/images/accod.jpg' %}" style="width:80%;height:50%"/>
+                            </div>
+                        </div>
+                        </div>
+                        </div></div>
+
+
+
+
+
+                     <button type="button" class="btn btn-info btn-sm tbutton" data-toggle="modal" data-target="#myModal">T-Shirt</button>
+                        <span class="separator">|</span>
+                    <!-- Modal -->
+                    <div class="modal fade change1" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                        <div class="modal-content change">
+                            <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            
+                            </div>
+                            <div class="modal-body">
+                                    <img src="{% static 'main/images/tshirt.jpg' %}" style="width:80%;height:50%"/>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.developer.tanaypatil.axis2016" class=" social-icon andro">
+                        <i class="fa fa-android"></i>
+                     </a>
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class="social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+                     
+       </div>
+        
+ </center>
+        
+	<script src="{% static 'main/js/jquery-2.2.2.js' %}"></script>
+    <script src="{% static 'main/js/bootstrap.js' %}"></script>
+    <script src="{% static 'main/js/time.js' %}"></script>
+    <script>
+      $('#maincontent').hide();   
+      $("#splash").show();
+        setTimeout( function(){
+            $('#maincontent').show();
+            $('#splash').hide();
+    },3000);
+
+    var h =$(window).outerHeight();
+	var w = $(window).outerWidth();
+	$("#splash").css({
+		'height':h,
+		'width':w
+    	});
+    </script>
+</body>
+</html>

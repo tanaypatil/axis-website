@@ -1,0 +1,112 @@
+/* CSS Document */
+
+body{
+	background-color: #272727;
+}
+
+.maincon{
+	padding-left:0px !important;
+	padding-right:0px !important;
+	padding-top:25px;
+}
+
+.quecol{
+	padding:0px !important;
+	border-right:5px double #FFFFFF;
+}
+
+.queimg{
+	width:auto;
+	height:500px;
+}
+
+.level{
+	color:#FFFFFF;
+	font-size:18px;
+	font-family:"time";
+	letter-spacing:0.1em;
+	text-shadow:1px 1px 3px #000000;
+}
+
+.leadertitle{
+	font-size:18px;
+	color:hsla(0,0%,72%,1.00);
+	font-family:"caviar";
+	text-decoration:underline;
+}
+
+.hintc{
+	font-family:"caviar";
+	text-align:left;
+	font-size: larger;
+	color: #171717;
+}
+
+.hintmt{
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 0.4em;
+	font-family: "caviar";
+}
+
+#hintbtn:focus{
+	border:none !important;
+}
+#hintbtn.active{
+	border:none;
+}
+#hintbtn:active{
+	border:none !important;
+}
+
+.axisimg{
+	width: 80px !important;
+	height: 21px !important;
+	position: absolute;
+	bottom: 10px;
+	right: 8px;
+}
+
+.scorebox{
+	background-color: hsla(0,0%,100%,0.5);
+	border-radius: 8px;
+	padding: 0px !important;
+	margin-bottom: 8px;
+}
+
+.scrname{
+	color: #FFFF99;
+	font-family: "Bebas";
+	font-size: 14px;
+}
+
+.scrcount{
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.scrscore{
+	color: #FFC815;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.hscrn{
+	color: #FFFFFF;
+}
+
+
+@font-face{
+		font-family:"time";
+		src:url(../fonts/digital-7.ttf);
+	}
+	
+@font-face{
+		font-family:"caviar";
+		src:url(../fonts/CaviarDreams.ttf);
+	}
+
+@font-face{
+		font-family:"Bebas";
+		src:url(../fonts/arial.ttf);
+	}

@@ -1,0 +1,314 @@
+{% load staticfiles %}
+<!doctype html>
+<html xmlns:mailto="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 INSOMNIA</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+<style>
+
+	input{
+        border-radius: 10px; 
+    }
+    
+
+</style>
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 12k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">INSOMNIA</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <!--<li><a data-toggle="pill" href="#rules">RULES</a></li>-->
+            <!--<li><a data-toggle="pill" href="#faq">FAQ</a></li>-->
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <li><a data-toggle="pill" href="#register">REGISTER</a></li>
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                	Night gathers, and now your coding begins. It shall not end until you fall asleep. You shall take no coffee,                    hold no discussions and take no help from stackoverflow. You shall live and die on your keyboard. You are the                    coder in the darkness. You are the watcher on the leaderboards. You are the shield that guards the realms of                    sleep-deprived coding enthusiasts, for this night and all the nights to come.
+                <br>
+                    And this year its twice the Insomnia.<br>
+                    Coding enthusiasts may find the link to this all night coding contest to be conducted in two stages in the Register Tab.<br>
+                    <br>
+                    <span class="larger gm modebox">WARMUP : 20th September: 9:00p.m. to 22nd September 11:59p.m</span><br><br>
+                    <span class="larger gm modebox">MAIN EVENT : 24th September: 9:00p.m. to 25th September 2:00a.m.</span>
+                </p>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <p>
+                
+                	<ul>
+                    	<li class="prblm_ul">
+                        The contest will be conducted on HackerEarth you can register for the event here.
+                        </li>
+                        <li class="prblm_ul">
+                        The event will be held online at Hackerearth.
+                        </li>
+                        <li class="prblm_ul">
+                        The rules will be displayed on the contest page.
+                        </li>
+                        <li class="prblm_ul">
+                        For eligible to participate, you must possess AXIS id and Hackerearth id.
+                        </li>
+                        <li class="prblm_ul">
+                        In case of any discrepancy, the decision of organisers will be final and binding.<br>
+                        Note: Both undergraduates as well as post-graduates students are allowed.
+                        </li>
+
+                    </ul>
+                
+                </p>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+               <p style="text-align:center">
+
+
+                   <span class="col-lg-4 col-lg-offset-1 col-xs-5">
+                    <span class="contact_name">SHUBHAM SHEKHAR SHAH</span>
+                    <br>+91-7720956323
+                    <br><a href="mailto:shubhamshekharshah@gmail.com" class="contact_mail">shubhamshekharshah@gmail.com</a></span>
+
+                    <span class="col-lg-4 col-md-offset-3 col-xs-4 col-sm-offset-3">
+                    <span class="contact_name">SHUBHAM SAXENA</span>
+                    <br>+91-7038243074
+                    <br><a href="mailto:shubham.saxena1396@gmail.com" class="contact_mail">shubham.saxena1396@gmail.com</a></span>
+
+                   <br><br><br><br>
+                   <span class="col-md-3 col-md-offset-5 larger">
+                       <b>Mail us at:<a href="mailto:axisinsomnia@gmail.com" class="contact_mail" style="font-size: 24px; font-weight: normal">
+                           axisinsomnia@gmail.com</a></b></span>
+
+                
+                </p>
+            </div>
+            
+            <div id="register" class="tab-pane fade ">
+             <!--<div class="form">
+            	<form role="form" class="form-horizontal" method="post">
+                	<div class="form-group-sm ">
+                    	
+                        <div class="row">
+                           <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                          <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                         <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 3</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                         <div class="row">
+                            <div class="col-sm-1" >
+                    		<div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 4</div>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Name"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="College Name"/>
+                           </div>
+                           <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Email Id"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="Contact"/>
+                            </div>
+                            <div class="col-sm-2">
+                    		<input class="form-control" name="fname" id="fname" placeholder="City"/>
+                            </div>
+                        </div>
+                        <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+  
+                        <div class="row">
+                    		 
+                        <div class="col-sm-12 text-center">
+                    		<input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div><br><br><br class="visible-xs">
+                        </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                    </div>
+                </form>	
+            </div>--> 
+            <p style="font-size:20px; text-align:center;">
+                <br><br>
+                Click <a target="_blank" href="http://www.hackerearth.com/insomnia16warmup">here</a>  to register for Warmup.<br><br>
+                 Click <a target="_blank" href="http://www.hackerearth.com/insomnia16">here</a>  to register for Main Event.
+                </p>
+            </div>
+            
+            
+            <div id="faq" class="tab-pane fade">
+                <p>
+                	
+                  <ul>
+                  <li class="prblm_ul">    
+                    <span class="larger">What are the coding languages allowed for Insomnia?<br></span>
+                    ALL the languages supported by Hackerearth are allowed.
+                  </li>
+                  <li class="prblm_ul">
+                     <span class="larger">Where will Insomnia be held?<br></span>
+                     Contest will be held on Hackerearth and you need to register as a member there to participate in                     Insomnia.
+                  </li>
+                  <li class="prblm_ul">   
+                  <span class="larger">What will be the scoring pattern for Insomnia?<br></span>
+                    Scoring pattern for the contest will be regular scoring pattern on Hackerearth, so do practise coding                    on Hackerearth to get yourself accustomed to its platform.
+                  </li>
+                </ul>    
+                    
+                </p>
+            </div>
+        
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

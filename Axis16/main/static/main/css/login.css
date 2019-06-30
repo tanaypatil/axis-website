@@ -1,0 +1,122 @@
+/* CSS Document */
+
+body {
+	background-color:#171717;
+	background-image:url(../images/loginbkg.jpg);
+	background-position:center;
+}
+
+#axisimg{
+	margin-top:8px;
+	margin-bottom:20px;
+}
+
+.main{
+	background-color: hsla(0,0%,15%,0.39);
+	border:2px groove #C8C8C8;
+	padding-top:15px;
+	padding-bottom:3px;
+	padding-left:8px;
+	padding-right:8px;
+	border-radius:9px;
+}
+
+.login{
+	color:#FFC815;
+	font-family:"Bebas";
+	font-size:36px;
+	letter-spacing:0.1em;
+	margin-bottom:10px;
+}
+
+#login{
+	width:70px;
+	height:35px;
+	border-radius:6px;
+	background-color:#FFC815;
+	color:#000000;
+	font-family:"Bebas";
+	letter-spacing:0.07em;
+	font-size:14px;
+	font-weight:bold;
+}
+#login:hover{
+	background-color:#EBB813;
+}
+#login:focus{
+	borde:none !important;
+	background-color:#EBB813;
+}
+
+#signup{
+	width:80px;
+	height:35px;
+	border-radius:6px;
+	background-color:#FFC815;
+	color:#000000;
+	font-family:"Bebas";
+	letter-spacing:0.07em;
+	font-size:13px;
+	font-weight:bold;
+}
+#signup:hover{
+	background-color:#EBB813;
+}
+#signup:focus{
+	borde:none !important;
+	background-color:#EBB813;
+}
+
+@font-face{
+	font-family:'Bebas';
+	src: url(../fonts/BebasNeue.otf);
+}
+
+@font-face{
+	font-family:'Ubuntu';
+	src: url(../fonts/Ubuntu-R.ttf);
+}
+
+input {
+	font-family:"Ubuntu" !important;
+}
+
+.register{
+	color:#FFFFFF;
+	font-size:14px;
+	font-family:"Ubuntu";
+	letter-spacing:0.01em;
+}
+
+.register:hover{
+	color:#FFC815;
+}
+
+
+a:hover {
+	text-decoration:none;
+}
+
+.fa{
+	font-size:28px !important;
+	color:hsla(0,100%,100%,0.69);
+	position:absolute;
+	top:25px;
+	left:25px;
+}
+.fa:hover{
+	color:hsla(0,0%,100%,1.00);
+}
+
+@media screen and (max-width:1000px){
+	
+	.main{
+		margin-top:125px;
+	}
+	
+	#axisimg{
+		margin-top:80px;
+		margin-bottom:90px;
+	}
+
+}

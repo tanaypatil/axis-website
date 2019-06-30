@@ -1,0 +1,254 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AXIS'16 CRYPTOCRUX</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-3.3.6.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/event-detail.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+
+<style>
+	input{
+        border-radius: 10px; 
+    }
+</style>
+</head>
+
+<body>
+<center>
+
+	<div class="container-fluid">
+
+        <div class="giftcon">
+             <i class="fa fa-gift" style="font-size: 44px; color: #FFC815"></i><br>
+            <span class="prblm_ul larger"> Prizes worth<br> <span class="price">Rs. 6k</span>
+             </span><a target="_blank" href=""> <i class="fa fa-arrow-right priceinfo"></i></a>
+        </div>
+        
+      <div class="row top">
+         <!--<a href="../../events.html"><i class="fa fa-arrow-circle-left hidden" id="home"></i></a>-->
+    	<div class="axisimg col-md-2 col-md-offset-0">
+        	<img src="{% static 'main/images/typowebrr.png' %}" width="160" height="47" alt="axis" />
+        </div>
+        
+        <div class="heding col-md-3 col-md-offset-2">CRYPTOCRUX</div>
+      </div>
+      
+      <div class="row">
+      
+      	<div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#event">EVENT DETAILS</a></li>
+            <li><a data-toggle="pill" href="#rules">RULES</a></li>
+            <li><a data-toggle="pill" href="#faq">FAQ</a></li>
+            <li><a data-toggle="pill" href="#contact_us">CONTACT US</a></li>
+            <!--<li><a data-toggle="pill" href="#register">REGISTER</a></li>-->
+            </ul>
+        <br>
+        <div class="tab-content">
+            
+            <div id="event" class="tab-pane fade in active">
+                <p>
+                	With the alien overlords screaming ‘revenge!’ and plotting to destroy our planet, the task of preserving the                    human race and its knowledge falls upon you, young comrade! The supreme commander has assigned you the                    pivotal task of encrypting our data to keep it off those squalid, extraneous hands. Charge up your brain                    cells and engage yourself in this one-of-a-kind encryption-decryption battle, and take away honour, glory,                    obeisance; and of course for the realists out there, we have very attractive cash prizes!
+                </p>
+            </div>
+            
+            <div id="rules" class="tab-pane fade">
+                <p>
+                	<ul>
+
+
+
+
+
+                    <li class="prblm_ul">A team event ,maximum of 2 members per team.</li>
+                    <li class="prblm_ul">It will be conducted Onsite.</li>
+                    <li class="prblm_ul">It would comprise of multiple interesting rounds,the details of which would be revealed on spot.</li>
+                    <li class="prblm_ul">All participants must have a registered event ID and college Identity card.</li>
+                    <li class="prblm_ul">In case of discrepancies,the decision of the Event Managers will be final and binding.</li>
+                    <!--<li class="prblm_ul">Team maximum consist maximum of 2 member</li>
+                    <li class="prblm_ul">Round 1 will be of 1 hour</li>
+                    <li class="prblm_ul">
+                    Round 2 detail will be provided to selected participants after the elimination round
+                    in case of any discrepancies , decisions of Event Manager will be final and binding
+                    </li>-->
+                    </ul>
+                    
+                </p>
+            </div>
+            
+            <div id="faq" class="tab-pane fade">
+                <p>
+                  <ul>
+                	<li class="prblm_ul">
+                    <span class="larger">Is Coding a prerequisite?<br></span>
+                    No, not at all.All rounds would be based on Logical Reasoning and Analytical Skills thus barring all
+                        the age and academic boundaries.
+                    </li><br><br>
+                    <li class="prblm_ul">
+                    <span class="larger">Why CRYPTOCRUX?<br></span>
+                    An event needing no Preparation,no prerequisites.Just walk in,participate and take away exciting prizes.</li>
+                  </ul>
+                </p>
+            </div>
+            
+            <div id="contact_us" class="tab-pane fade">
+                 <p style="text-align:center">
+                
+                	<span class="col-lg-3 col-md-offset-2 col-xs-4">
+                    <span class="contact_name">HARDIK RATHI</span>
+                    <br>+91-9769328402
+                    <br><a href="mailto:rathihardik7@gmail.com" class="contact_mail">rathihardik7@gmail.com</a></span>
+
+                    <span class="col-lg-4 col-md-offset-3 col-xs-4 col-sm-offset-4">
+                    <span class="contact_name">NEHA GADGIL</span>
+                    <br>+91-7720084887
+                    <br><a href="mailto:neha.gadgil95@gmail.com" class="contact_mail">neha.gadgil95@gmail.com</a></span>
+
+                     <br><br><br><br>
+                   <span class="col-md-3 col-md-offset-5 larger">
+                       <b>Mail us at:<a href="mailto:cypheraxis@gmail.com" class="contact_mail" style="font-size: 24px; font-weight: normal">
+                           cypheraxis@gmail.com</a></b></span>
+                
+                </p>
+            </div>
+            <div id="register" class="tab-pane fade ">
+                 <div class="form">
+                    <form role="form" class="form-horizontal" method="post" action="{% url 'cryptoreg' %}">
+                        {% csrf_token %}
+                        <div class="form-group-sm ">
+                                <div class="row">
+                                    <div class="col-sm-2" >
+                                <div style="font-size:18px; padding-top:10px;" class="prblm_ul larger">Team Name</div>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="team" id="team" placeholder="Name" type="text"/>
+                                </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                <div class="col-sm-1" >
+                                <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 1</div>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fname" id="fname" placeholder="Name" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fcollege" id="fcollege" placeholder="College Name" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fmail" id="fmail" placeholder="Email Id" type="email"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fcon" id="fcon" placeholder="Contact" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="fcity" id="fcity" placeholder="City" type="text"/>
+                                </div>
+                            </div>
+                            <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                            <div class="row">
+                                <div class="col-sm-1" >
+                                <div style="font-size:12px; padding-top:10px;" class="prblm_ul"> Member 2</div>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="sname" id="sname" placeholder="Name" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="scollege" id="scollege" placeholder="College Name" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="smail" id="smail" placeholder="Email Id" type="email"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="scon" id="scon" placeholder="Contact" type="text"/>
+                                </div>
+                                <div class="col-sm-2">
+                                <input class="form-control" name="scity" id="scity" placeholder="City" type="text"/>
+                                </div>
+                            </div>
+                            <br><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                            <div class="row">
+                                    
+                            <div class="col-sm-12 text-center">
+                                <input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                            </div><br><br><br class="visible-xs">
+                            </div><br class="visible-xs"><br class="visible-xs"><br class="visible-xs">
+                        </div>
+                    </form>	
+            </div>
+         </div>
+        </div>
+        <br>
+        </div>
+      
+      </div>
+      
+      
+      <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+         <!--time-->
+        <div class="timecon">
+        <abbr title="Time For Revolution">
+        <!--<div id="clockdiv" class="clockdiv hidden-xs hidden-sm time-container">
+          <div class="col-md-offset-0 ">
+          	  <img src="{% static 'main/images/timeb.png' %}" alt="time left" style="margin-top:8px;" class="cblink">
+              <div class="time col-md-1 col-xs-3">
+                  <div class="days"></div>
+                  <span class="timetext">D</span>
+              </div> 
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="hours"></div>
+                  <span class="timetext">h</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="minutes"></div>
+                  <span class="timetext">m</span>
+              </div>
+              
+              <div class="time col-md-1 col-xs-3">
+                  <div class="seconds"></div>
+                  <span class="timetext">s</span>
+              </div>
+          </div>
+         </div>--></abbr></div>
+        
+        
+        
+    
+    </div>
+
+</center>
+<script src="{% static 'main/js/jquery-2.2.2.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/time.js' %}"></script>
+</body>
+</html>

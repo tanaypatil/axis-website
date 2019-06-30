@@ -1,0 +1,165 @@
+{% load staticfiles %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="keywords" content="contacts, Contacts, AXIS16, AXIS VNIT, axis16, axisvnit,vnit,axis,axis16,axisvnit.org,vnit techfest, Central India's Largest Technical Event
+        www.axisvnit.org,central india, largest technical festival, technical festival, technical events, nagpur, vnit nagpur, workshops,
+        attractions, social initiatives, hrlping others, colors of nagpur, against child labor, world environment day,vnit,
+         festival,Central India, Asia, best, biggest, largest, vnit, students, robots, country, campaign, initiative, sponsor, games, artists,
+      international, contacts, AXIS, AXIS id, AXIS_VNIT, AXISVNITNAGPUR, axisvnitnagpur, axis.vnit, awesome, largest,
+      , Science, Technology, lectures, exhibitions, social, exhibitions, axis2k16, axis16, Axis16,Axis2016,AXIS2016,AXIS2k16">
+        <meta name="description" content="AXIS'16: VNIT Nagpur presents Central India's Largest Science and Technology Festival">
+<title>AXIS'16 Contact Us</title>
+<link href="{% static 'main/images/logoweb.png' %}" rel="icon">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/formthemelogin.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/contact.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}">
+</head>
+
+<body>
+
+<center>
+	
+    
+    <div class=" container-fluid maincon">
+
+
+        <div class="back">
+            <a href="first.html"> <i class="fa fa-arrow-circle-left"></i> </a>
+        </div>
+
+
+        <div class="container head">
+        	<div class="heading">CONTACTS</div>
+        </div>
+        
+        <div class="container cbox">
+        	
+            <div class="col-md-6 cons">
+            	
+                <div class="cua">Call Us at:</div>
+                
+                <div class="conbox">
+                
+                <div class="contact col-md-4 col-md-offset-1">
+                <span class="cname">J.P. JOGA</span>
+                <br><span class="cnum">+91-7767061700</span><br>
+                <!--<a href="mailto:amit.tapas@axisvnit.org" class="cmail">amit.tapas@axisvnit.org</a>-->
+                </div>
+                
+                <div class="col-md-2 contact hidden-sm">
+                	<i class="fa fa-phone phone soccon"></i>
+                </div>
+                
+                <div class="contact col-md-4 col-md-offset-0">
+                <span class="cname">MIHIKA DAGA</span>
+                <br><span class="cnum">+91-7875352622</span><br>
+                <!--<a href="mailto:amit.tapas@axisvnit.org" class="cmail">amit.tapas@axisvnit.org</a>-->
+                </div>
+         
+                <!--<div class="contact col-md-5 col-md-offset-3">
+                <!--<span class="cname">AMIT TAPAS</span>-->
+                <!--<br><span class="cnum" style="margin-left:29px;">+91-7767061700</span><br>
+                <!--<a href="mailto:amit.tapas@axisvnit.org" class="cmail">amit.tapas@axisvnit.org</a>-->
+                <!--</div>-->
+                
+                <div class="col-md-6 col-md-offset-2 col-sm-8 mailbox">
+                	<i class="fa fa-envelope soccon"></i><span class="cmail">info@axisvnit.org</span>
+                </div>
+                
+                </div>
+                
+                
+                
+                <div class="col-md-10 col-sm-10 col-sm-offset-1 addrbox">
+                	<i class="fa fa-map-marker soccon"></i>
+                    <span class="addr">Student Activity Center (SAC), VNIT, Nagpur.</span>
+                </div>
+                
+                
+            </div>
+            
+            <div class="col-md-6 msgbox col-md-10">
+            <br>
+            	<div class="lam col-sm-8 col-sm-offset-2">Leave A Message</div><br>
+            
+            	<form class="form-horizontal" role="form" method="post" id="form" action="{% url 'feed' %}">
+                    {% csrf_token %}
+                
+                	<div class="form-group-lg">
+                    
+                    	<div class="col-md-4">
+                        	<input class="form-control" name="name" id="name" type="text" placeholder="Your Name"/>
+                        </div>
+                        
+                        <div class="col-md-4">
+                        	<input class="form-control" name="mail" id="mail" type="email" placeholder="Your Email"/>
+                        </div>
+                        
+                        <div class="col-md-4">
+                        	<input class="form-control" name="con" id="con" type="text" placeholder="Your Contact"/>
+                        </div>
+                        
+                        <div class="hidden-sm"> <br><br> </div> <br>
+                        
+                        <div class="col-md-12">
+                        	<textarea class="form-control ta" id="msg" name="msg" placeholder="Your Message"></textarea>
+                        </div>
+
+                        <br><div class="hidden-sm"> <br><br><br><br><br><br><br> </div>
+
+                        <div class="row" style="margin-top: 10px; margin-left: 20px;">
+                        <div class="col-md-2 col-md-offset-4">
+                            <input class=" btn-warning" type="submit" name="login" id="login" value="Submit"/>
+                        </div>
+                        </div>
+
+                        <br><br>
+                    
+                    </div>
+                
+                </form>
+            
+            </div>
+            
+        </div>
+        
+        
+        
+        <!--footer-->
+      <div class=" footer">
+            <div class="container-fluid">
+                <div class="col-md-offset-9">
+                    <a target="_blank" href="https://www.facebook.com/axisvnit/" class=" social-icon fb">
+                        <i class="fa fa-facebook-f"></i>
+                     </a>
+                     <a target="_blank" href="https://www.linkedin.com/company/axis-vnit-nagpur?trk=biz-companies-cym" class=" social-icon in">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/axisvnit" class=" social-icon tw">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/axis_vnit" class=" social-icon ins">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCjczZvwh0T20yvMLsc5eUkA" class=" google social-icon yt">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    
+    </div>
+    
+    
+</center>
+
+
+<script src="{% static 'main/js/jquery-2.2.2.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.js' %}"></script>
+</body>
+</html>
